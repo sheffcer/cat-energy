@@ -1,0 +1,71 @@
+
+$bg-darkgrey: lightgrey;
+//$mobile-widths-only: #{"(max-width: 767px)"};
+//$tablet-widths: #{"(min-width: 768px)"};
+//$desktop-widths: #{"(min-width: 1150px)"};
+
+$mobile-widths-only: 959px;
+$mobile-widths-only-table: 620px;
+$tablet-widths: 660px;
+//$tablet-widths: 768px;
+$desktop-widths: 960px;
+$retina: '(min-resolution: 144dpi) and (min-resolution: 1.5dppx)';
+
+
+
+$font-family: 'Open Sans', "Arial", sans-serif;
+$font-family-bold: 'Open Sans Bold', "Arial", sans-serif;
+$font-family-light: 'Open Sans Light', "Arial", sans-serif;
+
+
+$green-submit: #2aab6d;
+$green-submit-hover: #1c9b5e;
+$green-submit-active: #1c9b5e;
+$red-danger: #d22856;
+$gray-light:                  hsl(0, 0%, 60%);
+$gray-lighter:      #e5e5e5;
+$gray-btn:      #dddfe0;
+$link-color: #ffffff;
+$promo-heading-color: #283645;
+
+$color-main: #0275d8;
+
+
+// Grid-variables
+
+// Ширины
+
+$screen-xs:                   320px;
+$screen-sm:                   480px;
+$screen-md:                   768px;
+$screen-lg:                   992px;
+$screen-xl:                   1200px;
+$screen-xxl:                  1800px;
+
+$container-sm:                100%;
+$container-md:                100%;
+$container-lg:                $screen-lg - 30;
+$container-xl:                $screen-xl - 30;
+$container-xxl:               $screen-xxl - 30;
+
+// Модульная сетка
+
+$grid-columns:                12;
+$grid-gutter-width:           rem(30px);
+
+
+// Разное
+
+$field-padding-vertical:      0.3em;
+$field-padding-horizontal:    0.7em;
+
+$border-radius:               rem(3px);
+$opacity:                     0.7;
+$transition-time:             0.3s;
+$shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
+
+$menu-desktop-width:          $screen-lg;
+$toggler-part-height:         3px;
+$toggler-part-bg-color:       #000;
+
+$z-index-modal:               100;

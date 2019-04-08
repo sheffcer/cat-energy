@@ -1,0 +1,40 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// класс для сокрытия элементов
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+  //outline: 1px dotted aqua!important;
+
+  @media (min-width: $tablet-widths) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    width: 960px;
+  }
+}
+
+@mixin focus() {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparentize($color-main, 0.3);
+}
