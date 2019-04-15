@@ -34,7 +34,101 @@
   </div>
 </header>
 <main>
-
+  <form class="form">
+    <div class="form__inner">
+      <h2 class="form__title">Подбор програм</h2>
+      <p class="form_text">Заполните анкету и мы подберем
+        программу питания для вашего кота</p>
+      <fieldset class="form__fieldset">
+        <label class="field-text field-text--error">
+          <span class="field-text__name">Имя:*</span>
+          <span
+            class="field-text__input-wrap"><input class="field-text__input" type="text" required
+                                                  placeholder="Барсик"></span>
+        </label>
+        <label class="field-text field-text--error">
+          <span class="field-text__name">Вес (кг):*</span>
+          <span
+            class="field-text__input-wrap"><input class="field-text__input" type="text" required
+                                                  placeholder="7"></span>
+        </label>
+        <label class="field-text field-text--error">
+          <span class="field-text__name">Возраст (лет):</span>
+          <span
+            class="field-text__input-wrap"><input class="field-text__input" type="text" required
+                                                  placeholder="7"></span>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="field-radio">
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="radio" checked="checked"><span
+              class="field-radio__name-text">Похудение</span></label>
+          </div>
+          <div class="field-radio__input-wrap  field-radio__input-wrap--error">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="radio"><span class="field-radio__name-text">Набор массы</span></label>
+          </div>
+          <div class="field-radio__input-wrap">
+            <label class="field-radio__name">
+              <input class="field-radio__input" type="radio" name="radio" disabled="disabled"><span
+              class="field-radio__name-text">Не знаю (Нужен ваш совет)</span></label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <label class="field-text field-text--error">
+          <span class="field-text__name">E-mail:*</span>
+          <span
+            class="field-text__input-wrap"><input class="field-text__input" type="text" required
+                                                  placeholder="kuklachev@gmail.com"></span>
+        </label>
+        <label class="field-text field-text--error">
+          <span class="field-text__name">Телефон:*</span>
+          <span
+            class="field-text__input-wrap"><input class="field-text__input" type="text" required
+                                                  placeholder="8 (960) 900-60-90"></span>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Комментарий</legend>
+        <label class="field-text"><span class="field-text__input-wrap"><textarea class="field-text__input" name="test"
+                                                                                 placeholder="Подсказка"
+                                                                                 style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 60px;">Расскажите обо всех повадках кота</textarea></span>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Дополнительно</legend>
+        <div class="field-checkbox">
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="sugar" checked><span
+              class="field-checkbox__name-text">Сахарозаменитель</span></label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="water"><span class="field-checkbox__name-text">Питьевая вода</span></label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="milk"><span class="field-checkbox__name-text">Молоко</span></label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="vitamins"><span
+              class="field-checkbox__name-text">Витамины</span></label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="field-actions">
+        <button class="btn form__btn">Отправить заявку</button>
+        <div class="field-actions__text">* — Обязательные поля/div>
+        </div>
+      </div>
+    </div>
+  </form>
 </main>
 <footer class="main-footer">
   <div class="main-footer__inner">
@@ -51,23 +145,32 @@
           <img src="https://place-hold.it/54x54" alt="logo">
         </a>
       </div>
-      <div class="page-footer__social">
-        <a href="#" class="social-link">vk
-          <!--<svg class="social-link__img  social-link__img&#45;&#45;vk">-->
-          <!--<use xlink:href="img/symbols.svg#icon-vk"></use>-->
-          <!--</svg>-->
-        </a>
-        <a href="#" class="social-link">instagram
-          <!--<svg class="social-link__img  social-link__img&#45;&#45;instagram">-->
-          <!--<use xlink:href="img/symbols.svg#icon-instagram"></use>-->
-          <!--</svg>-->
-        </a>
-        <a href="#" class="social-link">facebook
-          <!--<svg class="social-link__img  social-link__img&#45;&#45;facebook">-->
-          <!--<use xlink:href="img/symbols.svg#icon-facebook"></use>-->
-          <!--</svg>-->
-        </a>
-      </div>
+      <ul class="social">
+        <li class="social__link-wrap social__link-wrap--vk">
+          <a href="" class="social__link">vk
+            <img src="https://place-hold.it/25x25" alt="vk">
+            <!--<svg class="social-link__img  social-link__img&#45;&#45;vk">-->
+            <!--<use xlink:href="img/symbols.svg#icon-vk"></use>-->
+            <!--</svg>-->
+          </a>
+        </li>
+        <li class="social__link-wrap social__link-wrap--vk">
+          <a href="" class="social__link">instagram
+            <img src="https://place-hold.it/25x25" alt="instagram">
+            <!--<svg class="social-link__img  social-link__img&#45;&#45;vk">-->
+            <!--<use xlink:href="img/symbols.svg#instagram"></use>-->
+            <!--</svg>-->
+          </a>
+        </li>
+        <li class="social__link-wrap social__link-wrap--vk">
+          <a href="" class="social__link">facebook
+            <img src="https://place-hold.it/25x25" alt="facebook">
+            <!--<svg class="social-link__img  social-link__img&#45;&#45;vk">-->
+            <!--<use xlink:href="img/symbols.svg#facebook"></use>-->
+            <!--</svg>-->
+          </a>
+        </li>
+      </ul>
       <div class="page-footer__html">
         <h3 class="page-footer__html-text">HTML Academy</h3>
         <img class="page-footer__html-logo" src="https://place-hold.it/30x40" alt="logo">
