@@ -20,19 +20,19 @@
 }
 
 
-@mixin container() {
-  width: 320px;
-  margin: 0 auto;
-  //outline: 1px dotted aqua!important;
-
-  @media (min-width: $tablet-widths) {
-    width: 660px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    width: 960px;
-  }
-}
+//@mixin container() {
+//  width: 320px;
+//  margin: 0 auto;
+//  //outline: 1px dotted aqua!important;
+//
+//  @media (min-width: $tablet-widths) {
+//    width: 660px;
+//  }
+//
+//  @media (min-width: $desktop-widths) {
+//    width: 960px;
+//  }
+//}
 
 @mixin focus() {
   outline: 0;
