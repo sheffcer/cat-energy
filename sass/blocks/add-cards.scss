@@ -1,0 +1,5 @@
+.add-cards {
+  &__inner {
+    @include container;
+  }
+}

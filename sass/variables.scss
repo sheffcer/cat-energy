@@ -28,8 +28,24 @@ $gray-btn:      #dddfe0;
 $link-color: #ffffff;
 $promo-heading-color: #283645;
 
-$color-main: #0275d8;
+// Базовая типографика
 
+$font-size--root:             16px;
+
+$font-size:                   1rem; // rem(16px)
+
+$font-size--h1:               rem(40px);
+$font-size--h2:               rem(32px);
+$font-size--h3:               rem(24px);
+$font-size--h4:               rem(18px);
+$font-size--h5:               rem(16px);
+$font-size--h6:               rem(16px);
+
+//$color-main: #0275d8;
+$color-main:                  hsl(208, 98%, 43%);
+$color-success:               hsl(120, 39%, 54%);
+$color-danger:                hsl(2, 64%, 58%);
+$color-warning:               hsl(35, 84%, 62%);
 
 // Grid-variables
 

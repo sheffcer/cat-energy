@@ -1,0 +1,5 @@
+.features {
+  &__inner {
+    @include container;
+  }
+}

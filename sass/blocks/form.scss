@@ -1,0 +1,5 @@
+.form {
+  &__inner {
+    @include container;
+  }
+}

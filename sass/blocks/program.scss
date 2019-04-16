@@ -1,0 +1,5 @@
+.program {
+  &__inner {
+    @include container;
+  }
+}
