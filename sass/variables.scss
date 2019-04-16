@@ -41,11 +41,27 @@ $font-size--h4:               rem(18px);
 $font-size--h5:               rem(16px);
 $font-size--h6:               rem(16px);
 
+$font-size--small:            80%;
+
+$line-height:                 1.5;
+
+$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
+$font-family--monospace:      SFMono-Regular, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+$font-family--headings:       $font-family;
+
 //$color-main: #0275d8;
 $color-main:                  hsl(208, 98%, 43%);
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
+$gray:                        hsl(0, 0%, 50%);
+
+$color-vk:                    #4a76a8;
+$color-fb:                    #4267b2;
+$color-tw:                    #40A2F5;
+$color-gh:                    #24292e;
+
 
 // Grid-variables
 
@@ -72,6 +88,7 @@ $grid-gutter-width:           rem(30px);
 
 // Разное
 
+$typo-margin-vertical:        1em;
 $field-padding-vertical:      0.3em;
 $field-padding-horizontal:    0.7em;
 
