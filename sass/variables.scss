@@ -68,17 +68,18 @@ $color-gh:                    #24292e;
 // Ширины
 
 $screen-xs:                   320px;
-$screen-sm:                   480px;
+//$screen-sm:                   480px;
 $screen-md:                   768px;
-$screen-lg:                   992px;
-$screen-xl:                   1200px;
-$screen-xxl:                  1800px;
+$screen-lg:                   1300px;
+//$screen-xl:                   1200px;
+//$screen-xxl:                  1800px;
 
-$container-sm:                100%;
-$container-md:                100%;
-$container-lg:                $screen-lg - 30;
-$container-xl:                $screen-xl - 30;
-$container-xxl:               $screen-xxl - 30;
+//$container-sm:                100%;
+$container-xs:                $screen-xs - 40;
+$container-md:                $screen-md - 60;
+$container-lg:                $screen-lg - 80;
+//$container-xl:                $screen-xl - 30;
+//$container-xxl:               $screen-xxl - 30;
 
 // Модульная сетка
 
