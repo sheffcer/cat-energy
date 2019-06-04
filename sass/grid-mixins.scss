@@ -11,7 +11,7 @@ $container-sm:                ($screen-sm - 40) !default;
 //$container-md:                100% !default;
 $container-md:                ($screen-md - 60) !default;
 $container-lg:                ($screen-lg - 80) !default;
-//$container-xl:                ($screen-xl - 30) !default;
+$container-xl:                ($screen-xl - 80) !default;
 //$container-xxl:               ($screen-xxl - 30) !default;
 
 $grid-columns:                12 !default;
@@ -27,8 +27,8 @@ $grid-gutter-width:           40px !default;
   $xs-grid-gutter:  $grid-gutter-width,
   $sm-grid-gutter:  $grid-gutter-width,
   $md-grid-gutter:  $grid-gutter-width,
-  $lg-grid-gutter:  $grid-gutter-width
-  //$xl-grid-gutter:  $grid-gutter-width,
+  $lg-grid-gutter:  $grid-gutter-width,
+  $xl-grid-gutter:  $grid-gutter-width
   //$xxl-grid-gutter: $grid-gutter-width
 ) {
   display: block;
@@ -74,14 +74,14 @@ $grid-gutter-width:           40px !default;
     }
   }
 
-  //@media (min-width: $screen-xl) {
-  //  width: $container-xl;
-  //
-  //  @if ($xl-grid-gutter != $lg-grid-gutter) {
-  //    padding-left: ($xl-grid-gutter / 2);
-  //    padding-right: ($xl-grid-gutter / 2);
-  //  }
-  //}
+  @media (min-width: $screen-xl) {
+    width: $container-xl;
+
+    @if ($xl-grid-gutter != $lg-grid-gutter) {
+      padding-left: ($xl-grid-gutter / 2);
+      padding-right: ($xl-grid-gutter / 2);
+    }
+  }
 
   //@media (min-width: $screen-xxl) {
   //  width: $container-xxl;
@@ -126,8 +126,8 @@ $grid-gutter-width:           40px !default;
   $sm-grid-gutter:  $grid-gutter-width,
   $md-grid-gutter:  $grid-gutter-width,
   $lg-grid-gutter:  $grid-gutter-width,
-  $xl-grid-gutter:  $grid-gutter-width,
-  $xxl-grid-gutter: $grid-gutter-width
+  $xl-grid-gutter:  $grid-gutter-width
+  //$xxl-grid-gutter: $grid-gutter-width
 ) {
   display: flex;
   flex-wrap: wrap;
@@ -173,13 +173,13 @@ $grid-gutter-width:           40px !default;
     }
   }
 
-  @if ($xxl-grid-gutter != $xl-grid-gutter) {
-
-    @media (min-width: $screen-xxl) {
-      margin-left: ($xxl-grid-gutter / -2);
-      margin-right: ($xxl-grid-gutter / -2);
-    }
-  }
+  //@if ($xxl-grid-gutter != $xl-grid-gutter) {
+  //
+  //  @media (min-width: $screen-xxl) {
+  //    margin-left: ($xxl-grid-gutter / -2);
+  //    margin-right: ($xxl-grid-gutter / -2);
+  //  }
+  //}
 }
 
 
