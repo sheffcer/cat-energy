@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Oswaldregular";
+  font-weight: normal;
+  font-style: normal;
+  src:
+    local("Oswaldregular"),
+    local("Oswaldregular"),
+    url("../fonts/Oswaldregular.woff2") format("woff2"),
+    url("../fonts/Oswaldregular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "Arial";
+  font-weight: normal;
+  font-style: normal;
+  src:
+    local("Arial"),
+    local("Arial"),
+    url("../fonts/Arial.woff2") format("woff2"),
+    url("../fonts/Arial.woff") format("woff");
+}

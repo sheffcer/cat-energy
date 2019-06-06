@@ -1,4 +1,6 @@
 .page-header {
+  min-height: 67px;
+
   &__inner {
     @include container;
   }

@@ -1,5 +1,8 @@
 .program-selection {
+  background: url("../img/index-background-mobile.jpg") no-repeat center top;
+
   &__inner {
     @include container;
+    min-height: 503px;
   }
 }
