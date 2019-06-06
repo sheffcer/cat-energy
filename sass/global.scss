@@ -3,8 +3,8 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: $font-family;
-  //background: url("/_design/preview/pink-index-mobile.jpg") no-repeat center top;
-  min-height: 3014px;
+  //background: url("../_design/cat-energy-index-mobile.jpg") no-repeat center top;
+  min-height: 2984px;
   //background-color: #2aab6d;
 }
 
@@ -13,16 +13,16 @@ img {
   height: auto;
 }
 
-@media (min-width: $tablet-widths) {
+@media (min-width: $screen-md) {
   body {
-    //background: url("/_design/preview/pink-index-tablet.jpg") no-repeat center top;
-    min-height: 3264px;
+    //background: url("../_design/cat-energy-index-tablet.jpg") no-repeat center top;
+    min-height: 4333px;
   }
 }
 
-@media (min-width: $desktop-widths) {
+@media (min-width: $screen-lg) {
   body {
-    //background: url("/_design/preview/pink-index-desktop.jpg") no-repeat center top;
-    min-height: 2056px;
+    //background: url("../_design/cat-energy-index-desktop.jpg") no-repeat center top;
+    min-height: 2809px;
   }
 }

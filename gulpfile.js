@@ -127,7 +127,7 @@ gulp.task("copy", function () {
     console.log('---------- Копирование src в build');
     return gulp.src([
         "fonts/**/*.{woff,woff2}",
-        "_design/preview/*.jpg",
+        "_design/*.jpg",
         "img/**",
         "js/**",
         "*.html"
@@ -192,7 +192,7 @@ gulp.task("build", function (fn) {
 });
 
 // Отправка в GH pages (ветку gh-pages репозитория)
-var ghPagesUrl = 'https://sheffcer.github.io/107217-pink/index.html';
+var ghPagesUrl = 'https://sheffcer.github.io/battery/';
 
 gulp.task('deploy', function() {
     console.log('---------- Публикация ./build/ на GH pages');
