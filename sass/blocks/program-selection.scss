@@ -3,6 +3,30 @@
 
   &__inner {
     @include container;
-    min-height: 503px;
+    min-height: 475px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    margin-top: 30px;
   }
 }

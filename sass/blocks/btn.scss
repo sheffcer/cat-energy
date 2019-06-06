@@ -62,6 +62,18 @@ $border-radius:               rem(3px) !default;
     }
   }
 
+  &--apple {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: $color-apple;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+  }
+
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;
