@@ -1,5 +1,94 @@
 .features {
+  margin-top: -30px;
+
   &__inner {
     @include container;
+  }
+
+  &__list {
+    padding-inline-start: 0;
+    @include row;
+    list-style: none;
+    outline: 1px dotted pink;
+    margin: 0;
+    margin-top: -8px;
+
+  }
+
+  &__item {
+    @include col(xs, 12, 12, 0);
+    @include col(sm, 12, 12, 0);
+    outline: 1px dotted blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+    max-height: 62px;
+  }
+
+  &__img {
+    display: block;
+    position: relative;
+    width: 61px;
+    height: 61px;
+    //background-color: $color-apple;
+    background-color: pink;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 25%;
+      left: 25%;
+      z-index: 1;
+    }
+
+    &--first {
+      &::before {
+        background: url(../img/advantage-1.png) no-repeat;
+        width: 26px;
+        height: 29px;
+      }
+    }
+
+    &--second {
+      &::before {
+        background: url(../img/advantage-2.png) no-repeat;
+        width: 29px;
+        height: 31px;
+      }
+    }
+
+    &--fird {
+      &::before {
+        background: url(../img/advantage-3.png) no-repeat;
+        width: 26px;
+        height: 29px;
+      }
+    }
+
+    &--fourth {
+      &::before {
+        background: url(../img/advantage-4.png) no-repeat;
+        width: 26px;
+        height: 29px;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: normal;
+    color: $color-cod-gray;
+  }
+
+  &__description {
+    width: 70%;
+    font-family: $font-family--arial;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color:  $color-tundora;
   }
 }
