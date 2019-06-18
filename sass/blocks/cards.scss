@@ -4,6 +4,20 @@
     outline: 1px dotted green;
   }
 
+  &__grid {
+    @include row;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__grid .card {
+    //@include col;
+    @include col(xs, 12, 12, 0);
+    @include col(sm, 12, 12, 0);
+    outline: 1px dotted blue;
+    align-items: stretch;
+  }
+
   &__title {
     font-family: $font-family;
     font-size: 36px;
