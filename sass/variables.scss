@@ -13,9 +13,9 @@ $retina: '(min-resolution: 144dpi) and (min-resolution: 1.5dppx)';
 
 
 
-$font-family: 'Open Sans', "Arial", sans-serif;
-$font-family-bold: 'Open Sans Bold', "Arial", sans-serif;
-$font-family-light: 'Open Sans Light', "Arial", sans-serif;
+//$font-family: 'Open Sans', "Arial", sans-serif;
+//$font-family-bold: 'Open Sans Bold', "Arial", sans-serif;
+//$font-family-light: 'Open Sans Light', "Arial", sans-serif;
 
 
 $green-submit: #2aab6d;
@@ -60,8 +60,10 @@ $color-warning:               hsl(35, 84%, 62%);
 $gray:                        hsl(0, 0%, 50%);
 
 $color-apple: #68b738;
+$color-apple-hover: #5eaa2f;
 $color-cod-gray: #111111;
 $color-tundora: #444444;
+$color-btn-main: #68b738;
 
 $color-vk:                    #4a76a8;
 $color-fb:                    #4267b2;

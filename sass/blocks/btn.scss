@@ -16,28 +16,32 @@ $border-radius:               rem(3px) !default;
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  padding: $field-padding-vertical  $field-padding-horizontal;
+  //padding: $field-padding-vertical  $field-padding-horizontal;
+  padding-top: 9px;
+  padding-bottom: 9px;
   white-space: nowrap;
   user-select: none;
   text-align: center;
-  font-size: 1em;
-  font-family: inherit;
+  font-size: 16px;
+  font-family: $font-family;
   line-height: $line-height;
   text-decoration: none;
-  text-transform: none;
-  color: $text-color;
-  border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
+  text-transform: uppercase;
+  color: $link-color;
+  //border-radius: $border-radius;
+  //border: 1px solid $gray-lighter;
+  border: none;
+  background-color: $color-apple;
   background-image: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    text-decoration: none;
-    color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
+    text-decoration: inherit;
+    color: $link-color;
+    //background-color: darken($gray-lightest, 10%);
+    background-color: $color-apple-hover;
+    //border-color: darken($gray-lighter, 12%);
   }
 
   &:visited {
