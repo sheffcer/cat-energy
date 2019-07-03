@@ -1,0 +1,10 @@
+.gift {
+
+  &__inner {
+    @include container();
+    background: url("../img/gift-photo-mobile.jpg") no-repeat;
+    background-position: center top;
+    background-size: 280px 289px;
+    padding-bottom: 121px;
+  }
+}
