@@ -1,5 +1,21 @@
 .add-cards {
   &__inner {
     @include container;
+    outline: 1px dotted #4a76a8;
+  }
+
+  &__grid {
+    @include row;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__grid .add-card {
+    //@include col;
+    @include col(xs, 12, 12, 0);
+    @include col(sm, 12, 12, 0);
+    @include col(md, 6, 12, 0);
+    outline: 1px dotted blue;
+    align-items: stretch;
   }
 }

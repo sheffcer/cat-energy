@@ -13,7 +13,7 @@
     flex-grow: 1;
     position: relative;
     display: flex;
-    align-items: center;
+    //align-items: center;
     flex-direction: row;
     width: 100%;
     align-items: end;
@@ -22,6 +22,15 @@
     @media (min-width: $screen-md) {
       flex-direction: column;
     }
+  }
+
+  &__inner--last {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__inner--last .card__descr {
+    text-align: center;
   }
 
   &__img-wrap {
@@ -49,12 +58,12 @@
     max-width: 100%;
   }
 
-  //&__descr {
-  //  display: flex;
-  //  flex-direction: column;
-  //  align-items: flex-start;
-  //  min-height: 145px;
-  //}
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 145px;
+  }
 
   &__descr-table {
     width: 140px;
@@ -70,6 +79,14 @@
     & td:last-child {
       text-align: right;
     }
+  }
+
+  &__text {
+    font-family: $font-family--arial;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    color: $color-tundora;
   }
 
   &__new {

@@ -20,6 +20,11 @@
     align-items: stretch;
   }
 
+  &__grid .card:last-child .btn {
+    background-color: $color-concrete;
+    color: $color-mine-shaft;
+  }
+
   &__title {
     font-family: $font-family;
     font-size: 36px;
