@@ -1,6 +1,11 @@
 .main-footer {
   &__inner {
     @include container;
+
+    & .main-footer-wrap:last-child {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-wrap {
@@ -36,5 +41,11 @@
     background: url("../img/map-pin.png") no-repeat;
     width: 55px;
     height: 53px;
+  }
+
+  &__html {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
