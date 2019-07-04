@@ -2,4 +2,39 @@
   &__inner {
     @include container;
   }
+
+  &-wrap {
+    display: flex;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: $color-cod-gray;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $font-family--arial;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: $color-tundora;
+  }
+
+  &__map {
+    position: relative;
+  }
+
+  &__map::before {
+    top: 150px;
+    left: 115px;
+    position: absolute;
+    content: "";
+    background: url("../img/map-pin.png") no-repeat;
+    width: 55px;
+    height: 53px;
+  }
 }

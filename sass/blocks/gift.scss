@@ -5,6 +5,32 @@
     background: url("../img/gift-photo-mobile.jpg") no-repeat;
     background-position: center top;
     background-size: 280px 289px;
-    padding-bottom: 121px;
+    //padding-bottom: 121px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 290px;
+  }
+
+  &__grid {
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //justify-content: space-around;
+  }
+
+  &__img {
+    padding-top: 35px;
+  }
+
+  &__text {
+    max-width: 165px;
+    font-family: $font-family--arial;
+    font-size: 16px;
+    color: $link-color;
+    font-weight: normal;
+    text-align: center;
+
   }
 }
