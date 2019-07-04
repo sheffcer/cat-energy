@@ -1,6 +1,6 @@
 .social {
 
-  $block-name:                &; // #{$block-name}__
+  //$block-name:                &; // #{$block-name}__
 
   display: flex;
   flex-wrap: wrap;
@@ -17,11 +17,12 @@
   &__link {
     display: block;
     padding: 5px;
-    background-color: $gray;
+    //background-color: $gray;
+    font-size: 0;
 
-    #{$block-name}__link-wrap--fb & {
-      background-color: $color-fb;
-    }
+    //#{$block-name}__link-wrap--fb & {
+    //  background-color: $color-fb;
+    //}
 
     // #{$block-name}__link-wrap--vk & {
     //   background-color: $color-vk;
