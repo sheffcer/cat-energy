@@ -1,13 +1,11 @@
 .social {
-
-  //$block-name:                &; // #{$block-name}__
-
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-top: $typo-margin-vertical;
   margin-bottom: $typo-margin-vertical;
-  padding: 0;
+  //padding: 0;
   list-style: none;
 
   &__link-wrap {
