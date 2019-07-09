@@ -192,7 +192,7 @@ gulp.task("build", function (fn) {
 });
 
 // Отправка в GH pages (ветку gh-pages репозитория)
-var ghPagesUrl = 'https://sheffcer.github.io/battery/';
+var ghPagesUrl = 'https://sheffcer.github.io/cat-energy/';
 
 gulp.task('deploy', function() {
     console.log('---------- Публикация ./build/ на GH pages');
