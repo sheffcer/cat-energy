@@ -1,9 +1,7 @@
-$gray-lightest:               hsl(0, 0%, 90%) !default;
-$border-color:                hsl(0, 0%, 60%) !default;
-
-$line-height:                 1.5 !default;
-
-$border-radius:               rem(3px) !default;
+$gray-lightest: hsl(0, 0%, 90%) !default;
+$border-color: hsl(0, 0%, 60%) !default;
+$line-height: 1.5 !default;
+$border-radius: rem(3px) !default;
 
 .field-range {
   display: flex;
@@ -46,8 +44,6 @@ $border-radius:               rem(3px) !default;
       @include field-focus;
     }
 
-
-
     // Фоновая линия ползунка
 
     // Да, да, и это — локальная примесь.
@@ -73,7 +69,6 @@ $border-radius:               rem(3px) !default;
       @include field-range-runnable-track; // локальная примесь!
       color: transparent;
     }
-
 
     // Смещающийся элемент ползунка
 

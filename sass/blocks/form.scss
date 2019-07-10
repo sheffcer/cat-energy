@@ -40,6 +40,8 @@ $line-height:                 1.5 !default;
   }
 
   &__legend {
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: block;
     width: 100%;
     max-width: 100%; // Привет IE
