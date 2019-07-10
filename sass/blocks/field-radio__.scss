@@ -1,12 +1,6 @@
-// В этом файле должны быть стили для БЭМ-блока field-radio, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 $line-height:                 1.5 !default;
 
 .field-radio {
-
-  //$block-name:                &; // #{$block-name}__element
 
   display: block;
   margin-bottom: 1rem;
@@ -36,6 +30,12 @@ $line-height:                 1.5 !default;
 
   &__name-text {
     display: inline-block;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: $color-mine-shaft;
+    text-transform: uppercase;
 
     // своя радиокнопка с картинкой
 
