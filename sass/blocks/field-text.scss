@@ -27,10 +27,28 @@ $border-radius: rem(3px) !default;
       position: relative;
     }
 
+    &--tel {
+      position: relative;
+    }
+
     &--email::after {
+      top: 11px;
+      left: 240px;
       position: absolute;
       content: "";
+      width: 17px;
+      height: 13px;
+      background: url("../img/mail.png") no-repeat;
+    }
 
+    &--tel::after {
+      top: 0;
+      left: 240px;
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url("../img/phone.png") no-repeat;
     }
 
     &--tel {
@@ -91,7 +109,7 @@ $border-radius: rem(3px) !default;
     }
 
     &::placeholder {
-      color: $text-color--muted;
+      color: $color-tundora;
       opacity: 1;
     }
 
