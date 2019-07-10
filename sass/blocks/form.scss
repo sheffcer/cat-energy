@@ -1,9 +1,8 @@
-$font-family--headings:       -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+$font-family--headings: -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
-$font-size--h3:               rem(24px) !default;
+$font-size--h3: rem(24px) !default;
 
-$line-height:                 1.5 !default;
-
+$line-height: 1.5 !default;
 
 .form {
   &__inner {

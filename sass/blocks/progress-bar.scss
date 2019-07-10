@@ -1,9 +1,7 @@
-$gray-lightest:               hsl(0, 0%, 90%) !default;
-$border-color:                hsl(0, 0%, 60%) !default;
-
-$border-radius:               rem(3px) !default;
-
-$transition-time:             0.3s !default;
+$gray-lightest: hsl(0, 0%, 90%) !default;
+$border-color: hsl(0, 0%, 60%) !default;
+$border-radius: rem(3px) !default;
+$transition-time: 0.3s !default;
 
 .progress-bar {
   margin-top: 40px;
@@ -20,15 +18,12 @@ $transition-time:             0.3s !default;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 1px solid $border-color;
-  //border-radius: $border-radius;
   border-radius: 8px;
   text-align: center;
   width: 85px;
 
   &__bar {
-    //background-color: $gray-lightest;
     background-color: $color-apple;
-    //border-radius: $border-radius;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     max-width: 85px;
