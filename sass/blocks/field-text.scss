@@ -22,6 +22,20 @@ $border-radius: rem(3px) !default;
     font-weight: normal;
     color: $color-mine-shaft;
     text-transform: uppercase;
+
+    &--email {
+      position: relative;
+    }
+
+    &--email::after {
+      position: absolute;
+      content: "";
+
+    }
+
+    &--tel {
+      position: relative;
+    }
   }
 
   &__input-wrap {
