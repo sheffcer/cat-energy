@@ -7,6 +7,12 @@
     @media (min-width: $screen-md) {
       display: flex;
       justify-content: space-between;
+      min-height: 85px;
+      align-items: flex-end;
+    }
+
+    @media (min-width: $screen-md) {
+      min-height: 116px;
     }
   }
 }

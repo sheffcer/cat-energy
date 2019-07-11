@@ -34,6 +34,11 @@
       max-width: 427px;
       text-align: left;
     }
+
+    @media (min-width: $screen-md) {
+      margin-left: 80px;
+      margin-top: 110px;
+    }
   }
 
   &__description {
@@ -53,6 +58,7 @@
       font-size: 20px;
       line-height: 20px;
       text-align: left;
+      margin-left: 80px;
     }
   }
 
