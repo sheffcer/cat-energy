@@ -3,5 +3,10 @@
   &__inner {
     @include container;
     min-height: 65px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

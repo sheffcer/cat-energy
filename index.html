@@ -40,7 +40,12 @@
     <div class="program-selection__inner">
       <h1 class="program-selection__title">Функциональное питание для котов</h1>
       <p class="program-selection__description">Занялся собой? Займись котом!</p>
-      <img class="program-selection__img" src="img/index-can-mobile.png" alt="">
+      <picture class="program-selection__img">
+        <source media="(min-width: 1100px)" srcset="img/index-can-tablet.jpg">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg">
+        <img src="img/index-can-mobile.png" alt="can">
+      </picture>
+      <!--<img class="program-selection__img" src="img/index-can-mobile.png" alt="">-->
       <a href="#" class="btn  btn--apple">Подобрать программу</a>
     </div>
   </section>

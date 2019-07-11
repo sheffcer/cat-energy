@@ -10,6 +10,10 @@
     @include row;
     padding-inline-start: 0;
     list-style: none;
+
+    @media (min-width: $screen-md) {
+      min-width: 443px;
+    }
   }
 
   &__item {
@@ -38,6 +42,11 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-cod-gray;
+
+    @media (min-width: $screen-md) {
+      font-size: 18px;
+      line-height: 24.86px;
+    }
   }
 
   &__toggle {
