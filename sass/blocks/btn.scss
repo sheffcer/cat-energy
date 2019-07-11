@@ -23,7 +23,7 @@ $border-radius: rem(3px) !default;
   line-height: $line-height;
   text-decoration: none;
   text-transform: uppercase;
-  color: $link-color;
+  color: $link-color!important;
   //border-radius: $border-radius;
   //border: 1px solid $gray-lighter;
   border: none;
@@ -51,7 +51,8 @@ $border-radius: rem(3px) !default;
   &:disabled {
     opacity: $opacity;
     cursor: not-allowed;
-    color: $text-color;
+    //color: $text-color;
+    color: white;
     background-color: $gray-lightest;
     border-color: $gray-lighter;
 
@@ -69,6 +70,17 @@ $border-radius: rem(3px) !default;
     line-height: 18px;
     font-weight: normal;
     text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      left: 100px;
+      top: 285px;
+      position: absolute;
+      width: 245px;
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
 
   }
 
