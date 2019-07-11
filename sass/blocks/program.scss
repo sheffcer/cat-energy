@@ -41,6 +41,10 @@
       width: 39px;
       height: 49px;
       z-index: 1;
+
+      @media (min-width: $screen-md) {
+
+      }
     }
 
   }
@@ -64,19 +68,14 @@
     height: 50px;
     border-radius: 50%;
     background-color: $color-apple;
-    //background-color: pink;
 
-    &::before {
-      //left: 6px;
-      //top: -5px;
-      //content: "";
-      //position: absolute;
-      //background: url("../img/cat-1-mobile.png") no-repeat;
-      //width: 39px;
-      //height: 49px;
-      //z-index: 1;
-
+    @media (min-width: $screen-md) {
+      left: 500px;
+      top: 80px;
+      //width: 200px;
+      //height: 200px;
     }
+
   }
 
   &__title {
@@ -87,6 +86,11 @@
     font-weight: normal;
     color: $color-cod-gray;
     text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      font-size: 36px;
+      line-height: 37px;
+    }
   }
 
   &__description {
@@ -97,6 +101,12 @@
     line-height: 18px;
     font-weight: normal;
     color: $color-tundora;
+
+    @media (min-width: $screen-md) {
+      max-width: 420px;
+      font-size: 16px;
+      line-height: 24px;
+    }
 
   }
 
@@ -110,5 +120,10 @@
     color: $color-cod-gray;
     text-decoration: none;
     text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
