@@ -1,6 +1,10 @@
 .program {
   margin-top: 22px;
 
+  @media (min-width: $screen-md) {
+    margin-top: 5px;
+  }
+
   &__inner {
     @include container;
   }
@@ -16,6 +20,10 @@
     outline: 1px dotted blue;
     margin-bottom: 20px;
     min-height: 266px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 32px;
+    }
   }
 
   &__item-wrap {
@@ -43,7 +51,11 @@
       z-index: 1;
 
       @media (min-width: $screen-md) {
-
+        top: -78px;
+        left: -45px;
+        background: url("../img/cat-slim-tablet.png") no-repeat;
+        width: 140px;
+        height: 194px;
       }
     }
 
@@ -59,6 +71,14 @@
       width: 67px;
       height: 28px;
       z-index: 1;
+
+      @media (min-width: $screen-md) {
+        top: -20px;
+        left: -110px;
+        background: url("../img/cat-pro-tablet.png") no-repeat;
+        width: 268px;
+        height: 112px;
+      }
     }
   }
 
@@ -72,8 +92,19 @@
     @media (min-width: $screen-md) {
       left: 500px;
       top: 80px;
-      //width: 200px;
-      //height: 200px;
+      width: 0;
+      height: 0;
+
+      &::after {
+        top: -60px;
+        left: -70px;
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $color-apple;
+      }
     }
 
   }
@@ -88,6 +119,8 @@
     text-transform: uppercase;
 
     @media (min-width: $screen-md) {
+      padding-top: 35px;
+      padding-left: 35px;
       font-size: 36px;
       line-height: 37px;
     }
@@ -103,7 +136,9 @@
     color: $color-tundora;
 
     @media (min-width: $screen-md) {
-      max-width: 420px;
+      padding-left: 35px;
+      margin-top: -5px;
+      max-width: 340px;
       font-size: 16px;
       line-height: 24px;
     }
@@ -111,6 +146,7 @@
   }
 
   &__link {
+    position: relative;
     margin-top: 40px;
     display: block;
     font-family: $font-family;
@@ -121,7 +157,24 @@
     text-decoration: none;
     text-transform: uppercase;
 
+    &::after {
+      left: 95px;
+      position: absolute;
+      content: '';
+      background: url("../img/right-arrow-long.png") no-repeat;
+      width: 24px;
+      height: 11px;
+
+      @media (min-width: $screen-md) {
+        left: 165px;
+        top: 20px;
+      }
+    }
+
     @media (min-width: $screen-md) {
+      padding-left: 35px;
+      padding-top: 15px;
+      padding-bottom: 60px;
       font-size: 20px;
       line-height: 20px;
     }

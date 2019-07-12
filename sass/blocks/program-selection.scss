@@ -79,5 +79,10 @@
       margin: 0 auto;
       margin-bottom: 80px;
     }
+
+    @media (min-width: $screen-md) {
+      margin-top: -10px;
+      margin-bottom: 0;
+    }
   }
 }
