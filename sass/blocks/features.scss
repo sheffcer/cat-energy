@@ -13,17 +13,32 @@
     margin: 0;
     margin-top: -8px;
 
+    @media (min-width: $screen-md) {
+      margin: 0;
+      margin-top: 70px;
+      justify-content: space-between;
+    }
+
   }
 
   &__item {
     @include col(xs, 12, 12, 0);
     @include col(sm, 12, 12, 0);
+    @include col(md, 5, 11, 0);
     outline: 1px dotted blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 19px;
     max-height: 62px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      min-height: 233px;
+      margin-bottom: 83px;
+    }
   }
 
   &__img {
@@ -33,6 +48,11 @@
     height: 61px;
     background-color: $color-apple;
     //background-color: pink;
+
+    @media (min-width: $screen-md) {
+      width: 80px;
+      height: 80px;
+    }
 
     &::before {
       position: absolute;
@@ -81,6 +101,11 @@
     line-height: 60px;
     font-weight: normal;
     color: $color-cod-gray;
+
+    @media (min-width: $screen-md) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &__description {
@@ -90,5 +115,11 @@
     font-weight: normal;
     line-height: 18px;
     color: $color-tundora;
+
+    @media (min-width: $screen-md) {
+      max-width: 233px;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
