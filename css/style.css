@@ -372,7 +372,7 @@ img {
   line-height: 1.5;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #ffffff !important;
   border: none;
   background-color: #68b738;
   background-image: none;
@@ -389,7 +389,7 @@ img {
   .btn--disabled, .btn:disabled {
     opacity: 0.7;
     cursor: not-allowed;
-    color: #1a1a1a;
+    color: white;
     background-color: #e6e6e6;
     border-color: #e5e5e5; }
     a.btn--disabled {
@@ -716,6 +716,7 @@ img {
     font-weight: normal;
     color: #444444; }
   .program__link {
+    position: relative;
     margin-top: 40px;
     display: block;
     font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -725,6 +726,13 @@ img {
     color: #111111;
     text-decoration: none;
     text-transform: uppercase; }
+    .program__link::after {
+      left: 95px;
+      position: absolute;
+      content: '';
+      background: url("../img/right-arrow-long.png") no-repeat;
+      width: 24px;
+      height: 11px; }
 
 .social {
   padding: 0;
@@ -857,7 +865,7 @@ img {
   border: 0;
   outline: 1px dotted pink; }
   .form__fieldset:not(:last-child) {
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
 
 .form__title {
   font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -867,6 +875,7 @@ img {
   color: #111111; }
 
 .form__text {
+  margin-bottom: 30px;
   font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1007,6 +1016,28 @@ img {
     font-weight: normal;
     color: #222222;
     text-transform: uppercase; }
+    .field-text__name--email {
+      position: relative; }
+    .field-text__name--tel {
+      position: relative; }
+    .field-text__name--email::after {
+      top: 11px;
+      left: 240px;
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 13px;
+      background: url("../img/mail.png") no-repeat; }
+    .field-text__name--tel::after {
+      top: 0;
+      left: 240px;
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url("../img/phone.png") no-repeat; }
+    .field-text__name--tel {
+      position: relative; }
   .field-text__input-wrap {
     margin-left: 10px;
     display: block;
@@ -1044,10 +1075,10 @@ img {
     .field-text__input[type='color'] {
       padding: 0; }
     .field-text__input:-ms-input-placeholder {
-      color: gray;
+      color: #444444;
       opacity: 1; }
     .field-text__input::placeholder {
-      color: gray;
+      color: #444444;
       opacity: 1; }
     textarea.field-text__input {
       height: auto;
@@ -1390,13 +1421,36 @@ img {
     padding-right: 0; }
   .example__inner{
     width: 440px; }
+  .program-selection{
+    background-size: 480px 491px; }
   .program-selection__inner{
     width: 440px; }
+  .program-selection__description{
+    margin-bottom: 20px; }
+  .program-selection__img{
+    margin: 0 auto;
+    margin-bottom: 80px; }
   .form__inner{
     width: 440px; } }
   @media (min-width: 768px){
   body{
+    background: url("../_design/cat-energy-index-tablet.jpg") no-repeat center top;
     min-height: 4333px; }
+  .main-nav__list{
+    min-width: 550px; }
+  .main-nav__item{
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding-left: 0;
+    padding-right: 0; }
+  .main-nav__item{
+    padding: 0; }
+  .main-nav__link{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24.86px; }
   .main-nav--closed .main-nav__toggle{
     display: none; }
   .main-nav--opened .main-nav__toggle{
@@ -1440,8 +1494,25 @@ img {
     max-width: 50%;
     padding-left: 0;
     padding-right: 0; }
+  .btn--apple{
+    left: 100px;
+    top: 285px;
+    position: absolute;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px; }
   .page-header__inner{
     width: 708px; }
+  .page-header__inner{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 85px;
+    -ms-flex-align: end;
+    align-items: flex-end; }
   .main-footer__inner{
     width: 708px; }
   .add-cards__inner{
@@ -1454,12 +1525,134 @@ img {
     padding-right: 0; }
   .features__inner{
     width: 708px; }
+  .features__list{
+    margin: 0;
+    margin-top: 70px;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .features__item{
+    -ms-flex: 0 0 45.45455%;
+    flex: 0 0 45.45455%;
+    max-width: 45.45455%;
+    padding-left: 0;
+    padding-right: 0; }
+  .features__item{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    min-height: 233px;
+    margin-bottom: 83px; }
+  .features__img{
+    width: 80px;
+    height: 80px; }
+  .features__img::before{
+    top: 30%;
+    left: 30%; }
+  .features__img::after{
+    position: absolute;
+    font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 281px;
+    top: -78px;
+    left: 105px;
+    color: #f2f2f2;
+    z-index: 0; }
+  .features__img--first::after{
+    content: '1'; }
+  .features__img--second::after{
+    content: '2'; }
+  .features__img--fird::after{
+    content: '3'; }
+  .features__img--fourth::after{
+    content: '4'; }
+  .features__title{
+    font-size: 60px;
+    line-height: 60px; }
+  .features__description{
+    padding-top: 15px;
+    max-width: 233px;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1; }
+  .program{
+    margin-top: 5px; }
   .program__inner{
     width: 708px; }
+  .program__item{
+    margin-bottom: 32px; }
+  .program__item:nth-child(1) .program__img::before{
+    top: -78px;
+    left: -45px;
+    background: url("../img/cat-slim-tablet.png") no-repeat;
+    width: 140px;
+    height: 194px; }
+  .program__item:nth-child(2) .program__img::before{
+    top: -20px;
+    left: -110px;
+    background: url("../img/cat-pro-tablet.png") no-repeat;
+    width: 268px;
+    height: 112px; }
+  .program__img{
+    left: 500px;
+    top: 80px;
+    width: 0;
+    height: 0; }
+  .program__img::after{
+    top: -60px;
+    left: -70px;
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #68b738; }
+  .program__title{
+    padding-top: 35px;
+    padding-left: 35px;
+    font-size: 36px;
+    line-height: 37px; }
+  .program__description{
+    padding-left: 35px;
+    margin-top: -5px;
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px; }
+  .program__link::after{
+    left: 165px;
+    top: 20px; }
+  .program__link{
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    font-size: 20px;
+    line-height: 20px; }
   .example__inner{
     width: 708px; }
+  .program-selection{
+    background: none; }
   .program-selection__inner{
     width: 708px; }
+  .program-selection__inner{
+    position: relative; }
+  .program-selection__title{
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 427px;
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 85px; }
+  .program-selection__description{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 80px; }
+  .program-selection__img{
+    margin-top: -10px;
+    margin-bottom: 0; }
   .form__inner{
     width: 708px; } }
   @media (min-width: 1200px){
@@ -1497,6 +1690,8 @@ img {
   @media (min-width: 1300px){
   body{
     min-height: 2809px; }
+  .main-nav__link{
+    font-size: 20px; }
   .promo__inner{
     width: 1220px; }
   .promo__img{
@@ -1532,6 +1727,8 @@ img {
     width: 1220px; }
   .page-header__inner{
     width: 1220px; }
+  .page-header__inner{
+    min-height: 116px; }
   .main-footer__inner{
     width: 1220px; }
   .add-cards__inner{
@@ -1542,8 +1739,13 @@ img {
     width: 1220px; }
   .example__inner{
     width: 1220px; }
+  .program-selection{
+    background: url("../img/index-background-desktop.jpg") no-repeat center top; }
   .program-selection__inner{
     width: 1220px; }
+  .program-selection__title{
+    margin-left: 80px;
+    margin-top: 110px; }
   .form__inner{
     width: 1220px; } }
   @media (max-width: 768px){
