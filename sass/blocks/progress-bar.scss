@@ -11,6 +11,10 @@ $transition-time: 0.3s !default;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: $screen-md) {
+    margin-top: -75px;
+  }
 }
 
 .progress {

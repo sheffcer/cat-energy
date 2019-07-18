@@ -101,6 +101,9 @@
     color: $color-cod-gray;
 
     @media (min-width: $screen-md) {
+      position: relative;
+      top: -110px;
+      left: 530px;
       max-width: 177px;
       text-align: right;
       font-size: 20px;
@@ -110,5 +113,9 @@
 
   &__img {
     margin-top: 40px;
+
+    @media (min-width: $screen-md) {
+      margin-top: -62px;
+    }
   }
 }
