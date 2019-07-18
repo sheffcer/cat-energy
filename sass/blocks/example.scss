@@ -8,6 +8,10 @@
 
   &__inner {
     @include container;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 38px;
+    }
   }
 
   &__grid {
