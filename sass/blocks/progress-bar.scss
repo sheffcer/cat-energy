@@ -29,6 +29,10 @@ $transition-time: 0.3s !default;
   text-align: center;
   width: 85px;
 
+  @media (min-width: $screen-sm) {
+    width: 185px;
+  }
+
   @media (min-width: $screen-md) {
     min-width: 429px;
   }

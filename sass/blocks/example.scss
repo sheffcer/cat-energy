@@ -21,6 +21,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media (min-width: $screen-sm) {
+      justify-content: space-around;
+    }
+
     @media (min-width: $screen-md) {
       margin-top: 53px;
       max-width: 365px;
@@ -137,9 +141,15 @@
   &__img {
     margin-top: 40px;
 
+    @media (min-width: $screen-sm) {
+      text-align: center;
+    }
+
     @media (min-width: $screen-md) {
       margin-top: -62px;
       position: relative;
+      text-align: unset;
+      margin-left: 65px;
     }
   }
 

@@ -77,6 +77,10 @@
     position: relative;
     margin-bottom: 20px;
 
+    @media (min-width: $screen-sm) {
+      text-align: center;
+    }
+
     @media (min-width: $screen-md) {
       margin-top: 45px;
       margin-bottom: 55px;
