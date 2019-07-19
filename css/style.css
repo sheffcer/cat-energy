@@ -1731,7 +1731,14 @@ img {
     font-size: 20px;
     line-height: 28px; }
   .example__img{
-    margin-top: -62px; }
+    margin-top: -62px;
+    position: relative; }
+  .example__img::after{
+    position: absolute;
+    content: '';
+    background: url("../img/after-desktop.png");
+    width: 354px;
+    height: 607px; }
   .program-selection{
     background: none; }
   .program-selection__inner{
