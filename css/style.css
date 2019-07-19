@@ -443,6 +443,8 @@ img {
     line-height: 20px;
     font-weight: normal;
     color: #444444; }
+  .main-footer__text br {
+    display: none; }
   .main-footer__map {
     position: relative;
     margin-bottom: 20px; }
@@ -464,6 +466,12 @@ img {
     min-width: 280px;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+  .main-footer__html-text {
+    font-family: "Arial", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #444444; }
 
 .add-cards__inner {
   display: block;
@@ -773,19 +781,27 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green; }
+    outline: 1px dotted green;
+    background-color: #f2f2f2; }
   .example__grid {
-    margin-top: 35px;
+    margin-top: 25px;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
   .example__grid-item {
-    width: 127px;
+    min-width: 124px;
+    height: 56px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    -ms-flex-pack: center;
+        justify-content: center; }
   .example__title {
     padding-top: 15px;
     font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -794,25 +810,35 @@ img {
     font-weight: normal;
     color: #111111; }
   .example__description {
+    margin-top: -10px;
     font-family: "Arial", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
     color: #444444; }
   .example__subtitle {
+    padding-top: 20px;
     font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
-    color: #111111; }
+    color: #111111;
+    text-transform: uppercase; }
   .example__text {
+    position: relative;
+    top: 10px;
+    max-width: 60px;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
     font-family: "Arial", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 12px;
     line-height: 12px;
     font-weight: normal;
-    color: #111111; }
+    color: #444444; }
   .example__text--cost {
-    padding-top: 25px;
+    padding-top: 20px;
     text-align: center;
     font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 14px;
@@ -840,7 +866,8 @@ img {
     font-size: 36px;
     line-height: 36px;
     font-weight: normal;
-    text-align: center; }
+    text-align: center;
+    color: #ffffff; }
   .program-selection__description {
     margin: 0;
     font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -848,6 +875,7 @@ img {
     line-height: 14px;
     font-weight: normal;
     text-align: center;
+    color: #ffffff;
     text-transform: uppercase; }
   .program-selection__img {
     margin-top: 30px; }
@@ -1434,7 +1462,6 @@ img {
     width: 440px; } }
   @media (min-width: 768px){
   body{
-    background: url("../_design/cat-energy-index-tablet.jpg") no-repeat center top;
     min-height: 4333px; }
   .main-nav__list{
     min-width: 550px; }
@@ -1515,6 +1542,38 @@ img {
     align-items: flex-end; }
   .main-footer__inner{
     width: 708px; }
+  .main-footer__inner .main-footer-wrap:last-child{
+    max-width: 160px;
+    text-align: right;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .main-footer__inner .main-footer-wrap:first-child{
+    max-width: 160px;
+    text-align: left; }
+  .main-footer-wrap{
+    min-width: 708px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .main-footer__title{
+    max-width: 160px;
+    font-size: 20px;
+    line-height: 25px; }
+  .main-footer__text{
+    max-width: 160px;
+    font-size: 16px;
+    line-height: 20px; }
+  .main-footer__text br{
+    display: block; }
+  .main-footer__map{
+    margin-top: 45px;
+    margin-bottom: 55px; }
+  .main-footer__html{
+    min-width: 160px;
+    padding-top: 40px; }
+  .main-footer__html-text{
+    line-height: 20px; }
   .add-cards__inner{
     width: 708px; }
   .add-cards__grid .add-card{
@@ -1630,8 +1689,49 @@ img {
     padding-bottom: 60px;
     font-size: 20px;
     line-height: 20px; }
+  .example{
+    margin-top: -45px; }
   .example__inner{
     width: 708px; }
+  .example__inner{
+    padding-bottom: 38px;
+    background-color: #ffffff; }
+  .example__grid{
+    margin-top: 53px;
+    max-width: 365px; }
+  .example__grid-item{
+    min-width: 160px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    min-height: 72px;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .example__title{
+    font-size: 60px;
+    line-height: 60px; }
+  .example__description{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 24px; }
+  .example__subtitle{
+    font-size: 30px;
+    line-height: 37px; }
+  .example__text{
+    max-width: 130px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 6px;
+    background-color: #ffffff; }
+  .example__text--cost{
+    position: relative;
+    top: -110px;
+    left: 530px;
+    max-width: 177px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 28px; }
+  .example__img{
+    margin-top: -62px; }
   .program-selection{
     background: none; }
   .program-selection__inner{
@@ -1644,17 +1744,32 @@ img {
     max-width: 427px;
     text-align: left;
     margin-top: 60px;
-    margin-left: 85px; }
+    margin-left: 85px;
+    color: #111111; }
   .program-selection__description{
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-left: 80px; }
+    margin-left: 80px;
+    color: #111111; }
   .program-selection__img{
     margin-top: -10px;
     margin-bottom: 0; }
   .form__inner{
-    width: 708px; } }
+    width: 708px; }
+  .progress-bar{
+    margin-top: -75px;
+    padding-left: 70px;
+    padding-right: 70px;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .progress{
+    min-width: 429px; }
+  .progress__bar{
+    max-width: 429px;
+    min-height: 7px; }
+  .progress__name{
+    font-size: 20px; } }
   @media (min-width: 1200px){
   .promo__inner{
     width: 1120px; }
