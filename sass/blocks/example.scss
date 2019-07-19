@@ -139,6 +139,17 @@
 
     @media (min-width: $screen-md) {
       margin-top: -62px;
+      position: relative;
+    }
+  }
+
+  &__img::after {
+    @media (min-width: $screen-md) {
+      position: absolute;
+      content: '';
+      background: url("../img/after-desktop.png");
+      width: 354px;
+      height: 607px;
     }
   }
 }
