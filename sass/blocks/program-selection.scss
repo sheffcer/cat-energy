@@ -10,7 +10,7 @@
   }
 
   @media  (min-width: $screen-lg) {
-    background: url("../img/index-background-desktop.jpg") no-repeat center top;
+    background: url("../img/index-background-desktop.jpg") no-repeat 705px -120px;
 
   }
 
@@ -22,6 +22,10 @@
 
     @media (min-width: $screen-md) {
       position: relative;
+    }
+
+    @media  (min-width: $screen-lg) {
+      padding-bottom: 180px;
     }
   }
 
@@ -87,6 +91,12 @@
     @media (min-width: $screen-md) {
       margin-top: -10px;
       margin-bottom: 0;
+    }
+
+    @media  (min-width: $screen-lg) {
+      position: absolute;
+      top: 50px;
+      left: 500px;
     }
   }
 }
