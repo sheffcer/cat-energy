@@ -8,11 +8,12 @@
 
   &__inner {
     @include container;
-    background-color: $color-concrete;
+    //background-color: $color-concrete;
 
     @media (min-width: $screen-md) {
       padding-bottom: 38px;
-      background-color: $link-color;
+      //background-color: $link-color;
+      background-color: transparent;
     }
   }
 
@@ -28,6 +29,7 @@
     @media (min-width: $screen-md) {
       margin-top: 53px;
       max-width: 365px;
+      justify-content: space-between;
     }
   }
 
@@ -73,6 +75,7 @@
     color: $color-tundora;
 
     @media (min-width: $screen-md) {
+      margin-top: 0;
       padding-top: 10px;
       font-size: 16px;
       line-height: 24px;
