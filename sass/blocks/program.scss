@@ -14,7 +14,7 @@
     margin: 0;
 
     @media (min-width: $screen-lg) {
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }
 
@@ -22,7 +22,7 @@
     @include col(xs, 12, 12, 0);
     @include col(sm, 12, 12, 0);
     @include col(md, 12, 12, 0);
-    @include col(lg, 4, 10, 0);
+    @include col(lg, 9.3, 20, 0);
     outline: 1px dotted blue;
     margin-bottom: 20px;
     min-height: 266px;
@@ -33,7 +33,8 @@
     }
 
     @media (min-width: $screen-lg) {
-      width: 570px;
+      //width: 570px;
+      background-color: transparent;
     }
   }
 
@@ -68,6 +69,14 @@
         width: 140px;
         height: 194px;
       }
+
+      @media (min-width: $screen-lg) {
+        top: -34px;
+        left: 45px;
+        background: url("../img/cat-slim-desktop.png") no-repeat;
+        width: 140px;
+        height: 194px;
+      }
     }
 
   }
@@ -87,6 +96,14 @@
         top: -20px;
         left: -110px;
         background: url("../img/cat-pro-tablet.png") no-repeat;
+        width: 268px;
+        height: 112px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: -7px;
+        left: 12px;
+        background: url("../img/cat-pro-desktop.png") no-repeat;
         width: 268px;
         height: 112px;
       }
@@ -118,6 +135,24 @@
       }
     }
 
+    @media (min-width: $screen-lg) {
+      width: 103px;
+      //height: 103px;
+      left: 0;
+      top: 0;
+
+      &::after {
+        top: -33px;
+        left: 30px;
+        position: absolute;
+        content: "";
+        width: 103px;
+        height: 103px;
+        border-radius: 50%;
+        background-color: $color-apple;
+      }
+    }
+
   }
 
   &__title {
@@ -137,7 +172,7 @@
     }
 
     @media (min-width: $screen-lg) {
-
+      padding-left: 90px;
     }
   }
 
@@ -156,6 +191,11 @@
       max-width: 340px;
       font-size: 16px;
       line-height: 24px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 45px;
+      padding-left: 30px;
     }
 
   }
@@ -184,6 +224,11 @@
         left: 165px;
         top: 20px;
       }
+
+      @media (min-width: $screen-lg) {
+        left: 162px;
+        top: 18px;
+      }
     }
 
     @media (min-width: $screen-md) {
@@ -192,6 +237,11 @@
       padding-bottom: 60px;
       font-size: 20px;
       line-height: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: -22px;
+      padding-left: 30px;
     }
   }
 }
