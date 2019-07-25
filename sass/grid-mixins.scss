@@ -2,8 +2,10 @@ $screen-xs:                   320px !default;
 $screen-sm:                   480px !default;
 $screen-md:                   768px !default;
 $screen-lg:                   1300px !default;
-$screen-xl:                   1600px !default;
-$screen-xxl:                  1800px !default;
+//$screen-xl:                   1600px !default;
+$screen-xl:                   1300px !default;
+//$screen-xxl:                  1800px !default;
+$screen-xxl:                  1300px !default;
 
 $container-xs:                ($screen-xs - 40) !default;
 $container-sm:                ($screen-sm - 40) !default;

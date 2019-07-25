@@ -1,6 +1,10 @@
 .main-nav {
   position: relative;
 
+  @media  (min-width: $screen-lg) {
+    z-index: 2;
+  }
+
   &__inner {
     min-height: 67px;
   }
