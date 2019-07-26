@@ -8,6 +8,7 @@
 
   @media (min-width: $screen-lg) {
     margin-top: -65px;
+    margin-bottom: -150px;
   }
 
   &__inner {
@@ -187,7 +188,7 @@
 
     & picture {
       @media (min-width: $screen-lg) {
-        position: absolute;
+        position: relative;
         left: 555px;
         top: -560px;
       }
@@ -205,7 +206,7 @@
 
     @media (min-width: $screen-lg) {
       top: -555px;
-      left: 915px;
+      left: 908px;
     }
   }
 }

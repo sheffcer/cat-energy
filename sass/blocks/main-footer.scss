@@ -8,6 +8,10 @@
   &__inner {
     @include container;
 
+    @media (min-width: $screen-lg) {
+      position: relative;
+    }
+
     & .main-footer-wrap:last-child {
       flex-direction: column;
       align-items: center;
@@ -18,6 +22,7 @@
         flex-direction: row;
         justify-content: space-between;
       }
+
     }
 
     & .main-footer-wrap:first-child {
@@ -27,6 +32,15 @@
       @media (min-width: $screen-md) {
         max-width: 160px;
         text-align: left;
+      }
+
+      @media (min-width: $screen-lg) {
+        text-align: left;
+        position: absolute;
+        width: 570px;
+        min-height: 200px;
+        z-index: 5;
+        background-color: $link-color;
       }
     }
   }
