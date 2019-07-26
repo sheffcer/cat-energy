@@ -1805,7 +1805,8 @@ img {
   .main-nav{
     z-index: 2; }
   .main-nav__link{
-    font-size: 20px; }
+    font-size: 20px;
+    color: #ffffff; }
   .promo__inner{
     width: 1220px; }
   .promo__inner{
@@ -1866,6 +1867,15 @@ img {
     width: 1220px; }
   .main-footer__inner{
     width: 1220px; }
+  .main-footer__inner{
+    position: relative; }
+  .main-footer__inner .main-footer-wrap:first-child{
+    text-align: left;
+    position: absolute;
+    width: 570px;
+    min-height: 200px;
+    z-index: 5;
+    background-color: #ffffff; }
   .add-cards__inner{
     width: 1220px; }
   .add-cards__inner{
@@ -1936,7 +1946,8 @@ img {
     margin-top: -22px;
     padding-left: 30px; }
   .example{
-    margin-top: -65px; }
+    margin-top: -65px;
+    margin-bottom: -150px; }
   .example__inner{
     width: 1220px; }
   .example__inner{
@@ -1957,12 +1968,12 @@ img {
   .example__img{
     position: absolute; }
   .example__img picture{
-    position: absolute;
+    position: relative;
     left: 555px;
     top: -560px; }
   .example__img::after{
     top: -555px;
-    left: 915px; }
+    left: 908px; }
   .program-selection{
     position: relative;
     background: none; }
