@@ -20,8 +20,9 @@
       background-color: transparent;
     }
 
-    @media (min-width: $screen-md) {
-      max-height: 565px;
+    @media (min-width: $screen-lg) {
+      //max-height: 565px;
+      padding-bottom: 58px;
     }
   }
 
@@ -181,7 +182,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      position: relative;
+      position: absolute;
     }
 
     & picture {
@@ -202,7 +203,7 @@
       height: 607px;
     }
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       top: -555px;
       left: 915px;
     }
