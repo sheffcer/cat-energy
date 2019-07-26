@@ -13,7 +13,7 @@
 
   &__inner {
     @include container;
-    //background-color: $color-concrete;
+    background-color: $color-concrete;
 
     @media (min-width: $screen-md) {
       padding-bottom: 38px;
