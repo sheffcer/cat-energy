@@ -3,13 +3,29 @@
 
   @media (min-width: $screen-md) {
     margin-top: 50px;
+    background: url("../img/map-tablet.jpg") no-repeat center 130px;
+    background-size: 767px 400px;
+    min-height: 545px;
+  }
+
+  @media (min-width: $screen-lg) {
+    background: url("../img/map-desktop.jpg") no-repeat center top;
+    background-size: 1440px 400px;
   }
 
   &__inner {
     @include container;
 
+    @media (min-width: $screen-md) {
+      min-height: 745px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
     @media (min-width: $screen-lg) {
       position: relative;
+      min-height: 400px;
     }
 
     & .main-footer-wrap:last-child {
@@ -17,10 +33,16 @@
       align-items: center;
 
       @media (min-width: $screen-md) {
+        min-height: 150px;
         max-width: 160px;
         text-align: right;
         flex-direction: row;
         justify-content: space-between;
+      }
+
+      @media (min-width: $screen-lg) {
+        padding-top: 400px;
+        max-width: none;
       }
 
     }
@@ -37,7 +59,8 @@
       @media (min-width: $screen-lg) {
         text-align: left;
         position: absolute;
-        width: 570px;
+        top: 97px;
+        min-width: 570px;
         min-height: 200px;
         z-index: 5;
         background-color: $link-color;
@@ -103,6 +126,21 @@
       margin-top: 45px;
       margin-bottom: 55px;
     }
+
+    @media (min-width: $screen-lg) {
+      //background: url("../img/map-desktop.jpg") no-repeat center top;
+      //background-size: 1440px 400px;
+    }
+
+    & picture {
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+
+      @media (min-width: $screen-lg) {
+        display: none;
+      }
+    }
   }
 
   &__map::before {
@@ -113,6 +151,19 @@
     background: url("../img/map-pin.png") no-repeat;
     width: 55px;
     height: 53px;
+
+    @media (min-width: $screen-md) {
+      background: url("../img/map-pin-tablet.png") no-repeat;
+      width: 113px;
+      height: 106px;
+      top: -65px;
+      left: 310px;
+    }
+
+    @media (min-width: $screen-md) {
+      top: 115px;
+      left: 900px;
+    }
   }
 
   &__html {
