@@ -9,8 +9,7 @@ body {
   padding: 0;
   margin: 0;
   min-width: 320px;
-  font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
-  background: url("../_design/cat-energy-index-mobile.jpg") no-repeat center top; }
+  font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif; }
 
 img {
   max-width: 100%;
@@ -1470,8 +1469,6 @@ img {
   .progress{
     width: 185px; } }
   @media (min-width: 768px){
-  body{
-    background: url("../_design/cat-energy-index-tablet.jpg") no-repeat center top; }
   .main-nav__list{
     min-width: 550px; }
   .main-nav__item{
@@ -1819,8 +1816,6 @@ img {
   .progress__name{
     font-size: 20px; } }
   @media (min-width: 1300px){
-  body{
-    background: url("../_design/cat-energy-index-desktop.jpg") no-repeat center top; }
   .main-nav{
     z-index: 2; }
   .main-nav__link{
