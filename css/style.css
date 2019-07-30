@@ -10,7 +10,7 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
-  min-height: 2136px; }
+  background: url("../_design/cat-energy-index-mobile.jpg") no-repeat center top; }
 
 img {
   max-width: 100%;
@@ -1471,7 +1471,7 @@ img {
     width: 185px; } }
   @media (min-width: 768px){
   body{
-    min-height: 4333px; }
+    background: url("../_design/cat-energy-index-tablet.jpg") no-repeat center top; }
   .main-nav__list{
     min-width: 550px; }
   .main-nav__item{
@@ -1550,10 +1550,21 @@ img {
     -ms-flex-align: end;
     align-items: flex-end; }
   .main-footer{
-    margin-top: 50px; }
+    margin-top: 50px;
+    background: url("../img/map-tablet.jpg") no-repeat center 150px;
+    background-size: 767px 400px; }
   .main-footer__inner{
     width: 708px; }
+  .main-footer__inner{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .main-footer__inner .main-footer-wrap:last-child{
+    padding-top: 320px;
+    min-height: 150px;
     max-width: 160px;
     text-align: right;
     -ms-flex-direction: row;
@@ -1580,6 +1591,14 @@ img {
   .main-footer__map{
     margin-top: 45px;
     margin-bottom: 55px; }
+  .main-footer__map picture{
+    display: none; }
+  .main-footer__map::before{
+    background: url("../img/map-pin-tablet.png") no-repeat;
+    width: 113px;
+    height: 106px;
+    top: -65px;
+    left: 310px; }
   .main-footer__html{
     min-width: 160px;
     padding-top: 40px; }
@@ -1801,8 +1820,7 @@ img {
     font-size: 20px; } }
   @media (min-width: 1300px){
   body{
-    background: url("../_design/cat-energy-index-desktop.jpg") no-repeat center top;
-    min-height: 2809px; }
+    background: url("../_design/cat-energy-index-desktop.jpg") no-repeat center top; }
   .main-nav{
     z-index: 2; }
   .main-nav__link{
@@ -1864,19 +1882,32 @@ img {
     width: 1220px; }
   .page-header__inner{
     min-height: 116px; }
+  .main-footer{
+    background: url("../img/map-desktop.jpg") no-repeat center top;
+    background-size: 1440px 400px; }
   .main-footer__inner{
     width: 1220px; }
   .main-footer__inner{
     width: 1220px; }
   .main-footer__inner{
-    position: relative; }
+    position: relative;
+    min-height: 400px; }
+  .main-footer__inner .main-footer-wrap:last-child{
+    padding-top: 280px;
+    max-width: none; }
   .main-footer__inner .main-footer-wrap:first-child{
     text-align: left;
     position: absolute;
-    width: 570px;
+    top: 97px;
+    min-width: 570px;
     min-height: 200px;
     z-index: 5;
     background-color: #ffffff; }
+  .main-footer__map picture{
+    display: none; }
+  .main-footer__map::before{
+    top: 115px;
+    left: 900px; }
   .add-cards__inner{
     width: 1220px; }
   .add-cards__inner{
