@@ -19,6 +19,10 @@
       min-width: 550px;
       //flex-wrap: nowrap;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 610px;
+    }
   }
 
   &__item {
@@ -27,12 +31,13 @@
     @include col(md, 4, 12,  0);
     padding-top: 24px;
     padding-bottom: 24px;
-    outline: 1px dotted pink;
+    //outline: 1px dotted pink;
     text-align: center;
     border-top: 1px solid #ececec;
 
     @media (min-width: $screen-md) {
       padding: 0;
+      border-top: none;
       //margin-right: 40px;
       //&:nth-child(1) {
       //  width: 62px;
@@ -75,6 +80,12 @@
 
     @media (min-width: $screen-lg) {
       font-size: 20px;
+      //color: $link-color;
+    }
+  }
+
+  &__link--white {
+    @media (min-width: $screen-lg) {
       color: $link-color;
     }
   }
