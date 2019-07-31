@@ -6,10 +6,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  &--footer {
-    padding-top: 28px;
+    @media (min-width: $screen-md) {
+      & a:nth-child(2) {
+        display: none;
+        max-width: none;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      & a:nth-child(2) {
+        display: none;
+      }
+
+    }
+
+    &--footer {
+      padding-top: 28px;
+    }
+
   }
 
 }
