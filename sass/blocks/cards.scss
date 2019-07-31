@@ -9,12 +9,17 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: -3px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__grid .card {
     @include col(xs, 12, 12, 0);
     @include col(sm, 12, 12, 0);
-    @include col(md, 6, 12, 0);
+    @include col(md, 5.5, 12, 0);
     outline: 1px dotted blue;
     align-items: stretch;
   }
@@ -31,5 +36,11 @@
     line-height: 60px;
     font-weight: normal;
     color: $color-cod-gray;
+
+    @media (min-width: $screen-md) {
+      padding-top: 10px;
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 }
