@@ -1,6 +1,10 @@
 .gift {
-  margin-top: 37px;
+  margin-top: 57px;
   margin-bottom: 30px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 75px;
+  }
 
   &__inner {
     @include container();
@@ -13,6 +17,16 @@
     align-items: center;
     justify-content: space-evenly;
     min-height: 290px;
+
+    @media (min-width: $screen-md) {
+      background: url("../img/gift-photo-tablet.jpg") no-repeat center top;
+      background-size: 708px 200px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      min-height: 200px;
+    }
   }
 
   &__grid {
@@ -21,6 +35,10 @@
 
   &__img {
     padding-top: 35px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+    }
   }
 
   &__text {
@@ -30,6 +48,10 @@
     color: $link-color;
     font-weight: normal;
     text-align: center;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
 
   }
 }
