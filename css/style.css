@@ -10,7 +10,6 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
-  background: url("../_design/cat-energy-catalog-mobile.jpg") no-repeat center top;
   min-height: 3527px; }
 
 img {
@@ -190,7 +189,7 @@ img {
     outline: 1px dotted deeppink; }
 
 .gift {
-  margin-top: 37px;
+  margin-top: 57px;
   margin-bottom: 30px; }
   .gift__inner {
     display: block;
@@ -522,7 +521,9 @@ img {
     content: '';
     width: 55px;
     height: 3px;
-    background-color: black; }
+    background-color: #68b738; }
+  .add-cards__title::before {
+    background-color: #68b738; }
 
 .add-card {
   position: relative;
@@ -1493,7 +1494,6 @@ img {
     width: 185px; } }
   @media (min-width: 768px){
   body{
-    background: url("../_design/cat-energy-catalog-tablet.jpg") no-repeat center top;
     min-height: 4341px; }
   .main-nav__list{
     min-width: 550px; }
@@ -1544,8 +1544,26 @@ img {
     max-width: 33.33333%;
     padding-left: 6px;
     padding-right: 6px; }
+  .gift{
+    margin-bottom: 75px; }
   .gift__inner{
     width: 708px; }
+  .gift__inner{
+    background: url("../img/gift-photo-tablet.jpg") no-repeat center top;
+    background-size: 708px 200px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 200px; }
+  .gift__img{
+    padding-top: 0; }
+  .gift__text{
+    text-align: left; }
   .card__inner{
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1683,13 +1701,30 @@ img {
     line-height: 20px; }
   .add-cards__inner{
     width: 708px; }
+  .add-cards__grid{
+    margin-top: 80px; }
   .add-cards__grid .add-card{
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
     padding-left: 0;
     padding-right: 0; }
+  .add-cards__grid .add-card{
+    min-height: 142px; }
+  .add-cards__title::after{
+    left: 410px;
+    top: 30px;
+    width: 329px; }
+  .add-cards__title::before{
+    background-color: #68b738;
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 3px;
+    left: -30px;
+    top: 30px; }
   .add-cards__title{
+    margin-top: 20px;
     padding-left: 35px;
     font-size: 36px;
     line-height: 36px; }
