@@ -190,7 +190,7 @@ img {
     outline: 1px dotted deeppink; }
 
 .gift {
-  margin-top: 20px;
+  margin-top: 37px;
   margin-bottom: 30px; }
   .gift__inner {
     display: block;
@@ -490,7 +490,8 @@ img {
   margin-left: -20px;
   margin-right: -20px;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-top: 35px; }
   .add-cards__grid > * {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
@@ -503,7 +504,25 @@ img {
   padding-right: 0;
   outline: 1px dotted blue;
   -ms-flex-align: stretch;
-      align-items: stretch; }
+      align-items: stretch;
+  min-height: 129px; }
+
+.add-cards__title {
+  position: relative;
+  padding-top: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  color: #111111; }
+  .add-cards__title::after {
+    left: 245px;
+    top: 23px;
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 3px;
+    background-color: black; }
 
 .add-card {
   position: relative;
@@ -515,8 +534,7 @@ img {
   -ms-flex-align: center;
       align-items: center;
   min-width: 200px;
-  padding: 0 15px;
-  margin-bottom: 15px; }
+  padding: 0 15px; }
   .add-card__inner {
     -ms-flex-positive: 1;
         flex-grow: 1;
@@ -525,15 +543,16 @@ img {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    width: 100%;
-    margin-bottom: 20px; }
+    width: 100%; }
   .add-card__descr {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
   .add-card__title {
+    padding-top: 10px;
     margin: 0 0 20px;
+    margin-bottom: 10px;
     font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -559,13 +578,14 @@ img {
     color: #444444; }
   .add-card__text {
     font-family: "Arial", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: normal;
     color: #444444; }
   .add-card__buy {
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+    margin-bottom: 20px; }
 
 .features {
   margin-top: -30px; }
@@ -1573,7 +1593,7 @@ img {
     margin-bottom: 141px;
     min-height: 430px; }
   .cards__grid .card:nth-child(7), .cards__grid .card:nth-child(8){
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
   .cards__grid .card .card__img{
     position: relative;
     top: -48px; }
@@ -1582,7 +1602,7 @@ img {
   .cards__grid .card:nth-child(even) .card__descr{
     margin-top: -68px; }
   .cards__grid .card:last-child .card__img{
-    top: 50px; }
+    top: 55px; }
   .cards__title{
     padding-top: 10px;
     font-size: 60px;
@@ -1669,6 +1689,10 @@ img {
     max-width: 50%;
     padding-left: 0;
     padding-right: 0; }
+  .add-cards__title{
+    padding-left: 35px;
+    font-size: 36px;
+    line-height: 36px; }
   .features__inner{
     width: 708px; }
   .features__list{
