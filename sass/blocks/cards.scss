@@ -13,15 +13,21 @@
     @media (min-width: $screen-md) {
       display: flex;
       justify-content: space-between;
+      margin-top: 160px;
     }
   }
 
   &__grid .card {
     @include col(xs, 12, 12, 0);
     @include col(sm, 12, 12, 0);
-    @include col(md, 5.5, 12, 0);
+    @include col(md, 4.3, 12, 70px);
     outline: 1px dotted blue;
     align-items: stretch;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 142px;
+      min-height: 430px;
+    }
   }
 
   &__grid .card:last-child .btn {
