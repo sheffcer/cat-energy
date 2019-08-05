@@ -25,15 +25,46 @@
     align-items: stretch;
 
     @media (min-width: $screen-md) {
-      margin-bottom: 142px;
+      margin-bottom: 141px;
       min-height: 430px;
+    }
+  }
+
+  &__grid .card:nth-child(7), &__grid .card:nth-child(8) {
+    @media (min-width: $screen-md) {
+      margin-bottom: 50px;
     }
   }
 
   &__grid .card:last-child .btn {
     background-color: $color-concrete;
-    color: $color-mine-shaft;
+    color: $color-tundora!important;
     margin-top: -40px;
+  }
+
+  &__grid .card .card__img {
+    @media (min-width: $screen-md) {
+      position:  relative;
+      top: -48px;
+    }
+  }
+
+  &__grid .card:nth-child(even) .card__img {
+    @media (min-width: $screen-md) {
+      top: -80px;
+    }
+  }
+
+  &__grid .card:nth-child(even) .card__descr {
+    @media (min-width: $screen-md) {
+      margin-top: -68px;
+    }
+  }
+
+  &__grid .card:last-child .card__img {
+    @media (min-width: $screen-md) {
+      top: 50px;
+    }
   }
 
   &__title {

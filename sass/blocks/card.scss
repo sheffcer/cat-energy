@@ -58,13 +58,19 @@
 
     @media (min-width: $screen-md) {
       font-size: 20px;
-      max-width: 128px;
+      line-height: 20px;
+      max-width: 130px;
       text-align: center;
     }
   }
 
   &__title--last {
     max-width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding-top: 150px;
+      max-width: 140px;
+    }
   }
 
   &__descr {
@@ -72,6 +78,11 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 145px;
+
+    @media (min-width: $screen-md) {
+      align-items: center;
+      margin-top: -32px;
+    }
   }
 
   &__descr-table {
@@ -89,6 +100,11 @@
     font-weight: normal;
     color: $color-tundora;
 
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      height: 28px;
+    }
+
     & td:last-child {
       text-align: right;
     }
@@ -100,6 +116,13 @@
     line-height: 16px;
     font-weight: normal;
     color: $color-tundora;
+
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      line-height: 18px;
+      max-width: 170px;
+      margin-top: 5px;
+    }
   }
 
   &__new {
@@ -126,5 +149,9 @@
   &__buy {
     flex-shrink: 0;
     margin-bottom: 20px !important;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 38px!important;
+    }
   }
 }
