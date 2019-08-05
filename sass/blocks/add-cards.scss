@@ -8,6 +8,7 @@
     @include row;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 35px;
   }
 
   &__grid .add-card {
@@ -17,5 +18,33 @@
     @include col(md, 6, 12, 0);
     outline: 1px dotted blue;
     align-items: stretch;
+    min-height: 129px;
+  }
+
+  &__title {
+    position: relative;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: $font-family;
+    font-weight: normal;
+    color: $color-cod-gray;
+
+    &::after {
+      left: 245px;
+      top: 23px;
+      position: absolute;
+      content: '';
+      width: 55px;
+      height: 3px;
+      //color: $color-apple;
+      background-color: black;
+    }
+
+    @media (min-width: $screen-md) {
+      padding-left: 35px;
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 }

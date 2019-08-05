@@ -7,7 +7,7 @@
   align-items: center;
   min-width: 200px;
   padding: 0 15px;
-  margin-bottom: 15px;
+  //margin-bottom: 15px;
 
   &__inner {
     flex-grow: 1;
@@ -16,7 +16,7 @@
     //align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 
   &__descr {
@@ -25,7 +25,9 @@
   }
 
   &__title {
+    padding-top: 10px;
     margin: 0 0 20px;
+    margin-bottom: 10px;
     font-family: $font-family;
     font-size: 16px;
     line-height: 20px;
@@ -57,13 +59,14 @@
 
   &__text {
     font-family: $font-family--arial;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: normal;
     color: $color-tundora;
   }
 
   &__buy {
     flex-shrink: 0;
+    margin-bottom: 20px;
   }
 }

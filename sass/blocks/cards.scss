@@ -32,7 +32,7 @@
 
   &__grid .card:nth-child(7), &__grid .card:nth-child(8) {
     @media (min-width: $screen-md) {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
 
@@ -63,7 +63,7 @@
 
   &__grid .card:last-child .card__img {
     @media (min-width: $screen-md) {
-      top: 50px;
+      top: 55px;
     }
   }
 
