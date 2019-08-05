@@ -1494,6 +1494,7 @@ img {
     width: 185px; } }
   @media (min-width: 768px){
   body{
+    background: url("../_design/cat-energy-catalog-tablet.jpg") no-repeat center top;
     min-height: 4341px; }
   .main-nav__list{
     min-width: 550px; }
@@ -1728,6 +1729,19 @@ img {
     padding-left: 35px;
     font-size: 36px;
     line-height: 36px; }
+  .add-card__title{
+    padding-top: 25px;
+    padding-left: 38px;
+    font-size: 20px; }
+  .add-card__price{
+    font-size: 16px;
+    line-height: 20px; }
+  .add-card__text{
+    font-size: 16px;
+    line-height: 20px; }
+  .add-card__buy{
+    margin-left: 35px;
+    margin-right: 35px; }
   .features__inner{
     width: 708px; }
   .features__list{
