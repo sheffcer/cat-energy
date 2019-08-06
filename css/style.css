@@ -1492,6 +1492,8 @@ img {
   .progress{
     width: 185px; } }
   @media (min-width: 768px){
+  body{
+    background: url("../_design/cat-energy-catalog-tablet.jpg") no-repeat center top; }
   .main-nav__list{
     min-width: 550px; }
   .main-nav__item{
@@ -1580,6 +1582,8 @@ img {
     margin-top: -32px; }
   .card__descr-table{
     min-width: 250px; }
+  .card__descr-table{
+    min-width: 0; }
   .card__descr-item{
     font-size: 16px;
     height: 28px; }
@@ -1606,7 +1610,10 @@ img {
     padding-right: 35px; }
   .cards__grid .card{
     margin-bottom: 141px;
-    min-height: 430px; }
+    min-height: 430px;
+    background-color: #f2f2f2; }
+  .cards__grid .card:last-child{
+    background-color: transparent; }
   .cards__grid .card:nth-child(7), .cards__grid .card:nth-child(8){
     margin-bottom: 40px; }
   .cards__grid .card .card__img{
@@ -1945,6 +1952,8 @@ img {
   .progress__name{
     font-size: 20px; } }
   @media (min-width: 1300px){
+  body{
+    background: url("../_design/cat-energy-catalog-desktop.jpg") no-repeat center top; }
   .main-nav{
     z-index: 2; }
   .main-nav__list{
@@ -2003,6 +2012,21 @@ img {
     width: 1220px; }
   .cards__inner{
     width: 1220px; }
+  .cards__grid .card{
+    -ms-flex: 0 0 20.13423%;
+    flex: 0 0 20.13423%;
+    max-width: 20.13423%;
+    padding-left: 0;
+    padding-right: 0; }
+  .cards__grid .card{
+    margin-bottom: 145px; }
+  .cards__grid .card{
+    width: 245px;
+    background-color: transparent; }
+  .cards__grid .card:nth-child(7), .cards__grid .card:nth-child(8){
+    margin-bottom: 145px; }
+  .cards__title{
+    padding-top: 25px; }
   .btn--apple{
     top: 340px; }
   .page-header__inner{
