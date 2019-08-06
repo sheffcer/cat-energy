@@ -91,6 +91,10 @@
     @media (min-width: $screen-md) {
       min-width: 250px;
     }
+
+    @media (min-width: $screen-md) {
+      min-width: 0;
+    }
   }
 
   &__descr-item {

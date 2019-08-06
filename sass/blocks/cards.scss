@@ -21,18 +21,39 @@
     @include col(xs, 12, 12, 0);
     @include col(sm, 12, 12, 0);
     @include col(md, 4.3, 12, 70px);
+    @include col(lg, 3, 14.9, 0);
     outline: 1px dotted blue;
     align-items: stretch;
 
     @media (min-width: $screen-md) {
       margin-bottom: 141px;
       min-height: 430px;
+      background-color: $color-concrete;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 145px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 245px;
+      background-color: transparent;
+    }
+  }
+
+  &__grid .card:last-child {
+    @media (min-width: $screen-md) {
+      background-color: transparent;
     }
   }
 
   &__grid .card:nth-child(7), &__grid .card:nth-child(8) {
     @media (min-width: $screen-md) {
       margin-bottom: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 145px;
     }
   }
 
@@ -78,6 +99,10 @@
       padding-top: 10px;
       font-size: 60px;
       line-height: 60px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 25px;
     }
   }
 }
