@@ -57,6 +57,12 @@
     }
   }
 
+  &__grid .card:nth-child(n + 5) {
+    @media (min-width: $screen-lg) {
+      margin-bottom: 50px;
+    }
+  }
+
   &__grid .card:last-child .btn {
     background-color: $color-concrete;
     color: $color-tundora!important;

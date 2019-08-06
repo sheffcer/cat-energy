@@ -53,6 +53,12 @@
         top: 30px;
         width: 329px;
       }
+
+      @media (min-width: $screen-lg) {
+        top: 29px;
+        left: 373px;
+        width: 957px;
+      }
     }
 
     &::before {
@@ -68,6 +74,12 @@
         left: -30px;
         top: 30px;
       }
+
+      @media (min-width: $screen-lg) {
+        top: 29px;
+        left: -110px;
+        width: 70px;
+      }
     }
 
     @media (min-width: $screen-md) {
@@ -75,6 +87,10 @@
       padding-left: 35px;
       font-size: 36px;
       line-height: 36px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
     }
   }
 }

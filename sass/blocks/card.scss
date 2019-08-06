@@ -93,7 +93,7 @@
     }
 
     @media (min-width: $screen-md) {
-      min-width: 0;
+      min-width: 170px;
     }
   }
 
@@ -156,6 +156,11 @@
 
     @media (min-width: $screen-md) {
       margin-bottom: 38px!important;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 35px;
+      margin-right: 35px;
     }
   }
 }
