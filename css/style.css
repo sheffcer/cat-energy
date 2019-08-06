@@ -1583,7 +1583,7 @@ img {
   .card__descr-table{
     min-width: 250px; }
   .card__descr-table{
-    min-width: 0; }
+    min-width: 170px; }
   .card__descr-item{
     font-size: 16px;
     height: 28px; }
@@ -2008,6 +2008,9 @@ img {
     width: 1220px; }
   .gift__inner{
     width: 1220px; }
+  .card__buy{
+    margin-left: 35px;
+    margin-right: 35px; }
   .cards__inner{
     width: 1220px; }
   .cards__inner{
@@ -2025,6 +2028,8 @@ img {
     background-color: transparent; }
   .cards__grid .card:nth-child(7), .cards__grid .card:nth-child(8){
     margin-bottom: 145px; }
+  .cards__grid .card:nth-child(n + 5){
+    margin-bottom: 50px; }
   .cards__title{
     padding-top: 25px; }
   .btn--apple{
@@ -2065,6 +2070,16 @@ img {
     width: 1220px; }
   .add-cards__inner{
     width: 1220px; }
+  .add-cards__title::after{
+    top: 29px;
+    left: 373px;
+    width: 957px; }
+  .add-cards__title::before{
+    top: 29px;
+    left: -110px;
+    width: 70px; }
+  .add-cards__title{
+    padding-left: 0; }
   .features{
     margin-top: -5px; }
   .features__inner{
