@@ -25,7 +25,10 @@
     min-height: 129px;
 
     @media (min-width: $screen-md) {
-      min-height: 142px;
+      box-sizing: border-box;
+      padding-left: 35px;
+      padding-right: 35px;
+      min-height: 139px;
     }
   }
 
