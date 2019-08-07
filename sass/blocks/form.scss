@@ -21,6 +21,13 @@ $line-height: 1.5 !default;
     }
   }
 
+  &__fieldset .field-text:nth-child(2) .field-text__name {
+    min-width: 62px;
+
+  }&__fieldset .field-text:nth-child(3) .field-text__name {
+    min-width: 95px;
+  }
+
   &__title {
     font-family: $font-family;
     font-size: 36px;
@@ -30,7 +37,9 @@ $line-height: 1.5 !default;
   }
 
   &__text {
-    margin-bottom: 30px;
+    max-width: 228px;
+    margin-bottom: 35px;
+    margin-top: -5px;
     font-family: $font-family;
     font-size: 14px;
     line-height: 18px;
