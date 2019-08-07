@@ -13,6 +13,11 @@
     @media (min-width: $screen-md) {
       margin-top: 80px;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 78px;
+      max-width: 895px;
+    }
   }
 
   &__grid .add-card {
@@ -29,6 +34,15 @@
       padding-left: 35px;
       padding-right: 35px;
       min-height: 139px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      min-height: 71px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 

@@ -29,6 +29,11 @@
   &__descr {
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $screen-lg) {
+      margin-right: 48px;
+      min-width: 285px;
+    }
   }
 
   &__title {
@@ -95,6 +100,12 @@
     @media (min-width: $screen-md) {
       //margin-left: 35px;
       //margin-right: 35px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0;
+      padding-left: 90px;
+      padding-right: 90px;
     }
   }
 }

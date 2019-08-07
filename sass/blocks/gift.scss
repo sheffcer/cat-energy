@@ -6,6 +6,13 @@
     margin-bottom: 75px;
   }
 
+  @media (min-width: $screen-lg) {
+    position: relative;
+    top: -340px;
+    left: 490px;
+    margin-bottom: -310px;
+  }
+
   &__inner {
     @include container();
     background: url("../img/gift-photo-mobile.jpg") no-repeat;
@@ -26,6 +33,17 @@
       flex-direction: row;
       align-items: center;
       min-height: 200px;
+    }
+
+    @media (min-width: $screen-lg) {
+      background: url("../img/gift-photo-mobile.jpg") no-repeat;
+      background-position: center top;
+      background-size: 245px 283px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      min-height: 290px;
     }
   }
 
@@ -51,6 +69,10 @@
 
     @media (min-width: $screen-md) {
       text-align: left;
+    }
+
+    @media (min-width: $screen-lg) {
+      text-align: center;
     }
 
   }
