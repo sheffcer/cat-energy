@@ -2121,9 +2121,15 @@ img {
     width: 70px; }
   .add-cards__title{
     padding-left: 0; }
+  .add-card__inner{
+    -ms-flex-align: center;
+    align-items: center; }
   .add-card__descr{
     margin-right: 48px;
     min-width: 285px; }
+  .add-card__title{
+    padding: 0;
+    margin: 0; }
   .add-card__buy{
     margin: 0;
     padding-left: 90px;
