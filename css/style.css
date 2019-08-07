@@ -1808,8 +1808,7 @@ img {
     padding-left: 0;
     padding-right: 0; }
   .program__item{
-    margin-bottom: 32px;
-    background-color: #f2f2f2; }
+    margin-bottom: 32px; }
   .program__item:nth-child(1) .program__img::before{
     top: -78px;
     left: -45px;
@@ -2156,8 +2155,6 @@ img {
     max-width: 46.5%;
     padding-left: 0;
     padding-right: 0; }
-  .program__item{
-    background-color: transparent; }
   .program__item:nth-child(1) .program__img::before{
     top: -34px;
     left: 45px;
