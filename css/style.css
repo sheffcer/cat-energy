@@ -1492,8 +1492,6 @@ img {
   .progress{
     width: 185px; } }
   @media (min-width: 768px){
-  body{
-    background: url("../_design/cat-energy-catalog-tablet.jpg") no-repeat center top; }
   .main-nav__list{
     min-width: 550px; }
   .main-nav__item{
@@ -1961,8 +1959,6 @@ img {
   .progress__name{
     font-size: 20px; } }
   @media (min-width: 1300px){
-  body{
-    background: url("../_design/cat-energy-catalog-desktop.jpg") no-repeat center top; }
   .main-nav{
     z-index: 2; }
   .main-nav__list{
@@ -2013,10 +2009,30 @@ img {
     max-width: 16.66667%;
     padding-left: 10px;
     padding-right: 10px; }
+  .gift{
+    position: relative;
+    top: -340px;
+    left: 490px;
+    margin-bottom: -310px; }
   .gift__inner{
     width: 1220px; }
   .gift__inner{
     width: 1220px; }
+  .gift__inner{
+    background: url("../img/gift-photo-mobile.jpg") no-repeat;
+    background-position: center top;
+    background-size: 245px 283px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    min-height: 290px; }
+  .gift__text{
+    text-align: center; }
   .card__buy{
     margin-left: 35px;
     margin-right: 35px; }
@@ -2079,6 +2095,20 @@ img {
     width: 1220px; }
   .add-cards__inner{
     width: 1220px; }
+  .add-cards__grid{
+    margin-top: 78px;
+    max-width: 895px; }
+  .add-cards__grid .add-card{
+    padding: 0;
+    min-height: 71px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center; }
   .add-cards__title::after{
     top: 29px;
     left: 373px;
@@ -2089,6 +2119,13 @@ img {
     width: 70px; }
   .add-cards__title{
     padding-left: 0; }
+  .add-card__descr{
+    margin-right: 48px;
+    min-width: 285px; }
+  .add-card__buy{
+    margin: 0;
+    padding-left: 90px;
+    padding-right: 90px; }
   .features{
     margin-top: -5px; }
   .features__inner{
