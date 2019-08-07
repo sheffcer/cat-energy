@@ -271,7 +271,8 @@ img {
         align-items: flex-start;
     min-height: 145px; }
   .card__descr-table {
-    width: 140px; }
+    width: 140px;
+    border-collapse: collapse; }
   .card__descr-item {
     font-family: "Arial", -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 12px;
@@ -313,7 +314,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px dotted green;
   outline: 1px dotted green; }
 
 .cards__grid {
@@ -477,8 +477,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px dotted green;
-  outline: 1px dotted #4a76a8; }
+  outline: 1px dotted green; }
 
 .add-cards__grid {
   display: -ms-flexbox;
@@ -500,10 +499,13 @@ img {
   max-width: 100%;
   padding-left: 0;
   padding-right: 0;
-  outline: 1px dotted blue;
   -ms-flex-align: stretch;
       align-items: stretch;
-  min-height: 129px; }
+  min-height: 129px;
+  border-top: 1px solid #cdcdcd; }
+
+.add-cards__grid .add-card:last-child {
+  border-bottom: 1px solid #cdcdcd; }
 
 .add-cards__title {
   position: relative;
@@ -1584,7 +1586,8 @@ img {
     min-width: 170px; }
   .card__descr-item{
     font-size: 16px;
-    height: 28px; }
+    height: 28px;
+    border-bottom: 1px solid #cdcdcd; }
   .card__text{
     font-size: 16px;
     line-height: 18px;
@@ -1715,7 +1718,9 @@ img {
     box-sizing: border-box;
     padding-left: 35px;
     padding-right: 35px;
-    min-height: 139px; }
+    min-height: 139px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd; }
   .add-cards__title::after{
     left: 410px;
     top: 30px;
@@ -2049,8 +2054,7 @@ img {
   .cards__grid .card{
     margin-bottom: 145px; }
   .cards__grid .card{
-    width: 245px;
-    background-color: transparent; }
+    width: 245px; }
   .cards__grid .card:nth-child(7), .cards__grid .card:nth-child(8){
     margin-bottom: 145px; }
   .cards__grid .card:nth-child(n + 5){
@@ -2108,7 +2112,9 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    border-left: none;
+    border-right: none; }
   .add-cards__title::after{
     top: 29px;
     left: 373px;
