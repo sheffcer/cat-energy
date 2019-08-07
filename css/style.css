@@ -1067,8 +1067,8 @@ img {
     .field-text__name--tel {
       position: relative; }
     .field-text__name--email::after {
-      top: 11px;
-      left: 240px;
+      top: 4px;
+      left: 255px;
       position: absolute;
       content: "";
       width: 17px;
@@ -1076,7 +1076,7 @@ img {
       background: url("../img/mail.png") no-repeat; }
     .field-text__name--tel::after {
       top: 0;
-      left: 240px;
+      left: 255px;
       position: absolute;
       content: "";
       width: 20px;
