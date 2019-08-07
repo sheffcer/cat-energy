@@ -38,7 +38,6 @@ img {
   .main-nav__inner {
     min-height: 67px; }
   .main-nav__list {
-    outline: 1px dotted green;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -133,8 +132,7 @@ img {
   .promo__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
   .promo__grid {
     display: -ms-flexbox;
     display: flex;
@@ -194,7 +192,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green;
     background: url("../img/gift-photo-mobile.jpg") no-repeat;
     background-position: center top;
     background-size: 280px 289px;
@@ -313,8 +310,7 @@ img {
 .cards__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  outline: 1px dotted green; }
+  margin-right: auto; }
 
 .cards__grid {
   display: -ms-flexbox;
@@ -336,7 +332,6 @@ img {
   max-width: 100%;
   padding-left: 0;
   padding-right: 0;
-  outline: 1px dotted blue;
   -ms-flex-align: stretch;
       align-items: stretch; }
 
@@ -406,7 +401,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px dotted green;
   min-height: 65px; }
 
 .main-footer {
@@ -414,8 +408,7 @@ img {
   .main-footer__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
     .main-footer__inner .main-footer-wrap:last-child {
       -ms-flex-direction: column;
           flex-direction: column;
@@ -476,8 +469,7 @@ img {
 .add-cards__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  outline: 1px dotted green; }
+  margin-right: auto; }
 
 .add-cards__grid {
   display: -ms-flexbox;
@@ -594,8 +586,7 @@ img {
   .features__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
   .features__list {
     -webkit-padding-start: 0;
             padding-inline-start: 0;
@@ -606,7 +597,6 @@ img {
     margin-left: -20px;
     margin-right: -20px;
     list-style: none;
-    outline: 1px dotted pink;
     margin: 0;
     margin-top: -8px; }
     .features__list > * {
@@ -618,7 +608,6 @@ img {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
-    outline: 1px dotted blue;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -674,8 +663,7 @@ img {
   .program__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
   .program__grid {
     display: -ms-flexbox;
     display: flex;
@@ -693,9 +681,9 @@ img {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
-    outline: 1px dotted blue;
     margin-bottom: 20px;
-    min-height: 266px; }
+    min-height: 266px;
+    background-color: #f2f2f2; }
   .program__item-wrap {
     padding-left: 20px; }
   .program__img-wrap {
@@ -704,7 +692,6 @@ img {
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
-    outline: 1px dotted pink;
     -ms-flex-align: center;
         align-items: center; }
   .program__item:nth-child(1) .program__img::before {
@@ -805,7 +792,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green;
     background-color: #f2f2f2; }
   .example__grid {
     margin-top: 25px;
@@ -879,7 +865,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green;
     min-height: 475px;
     display: -ms-flexbox;
     display: flex;
@@ -907,8 +892,7 @@ img {
 .form__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  outline: 1px dotted green; }
+  margin-right: auto; }
 
 .form__fieldset {
   min-width: 0;
@@ -1614,7 +1598,8 @@ img {
     min-height: 430px;
     background-color: #f2f2f2; }
   .cards__grid .card:last-child{
-    background-color: transparent; }
+    background-color: transparent;
+    outline: 1px solid #e6e6e6; }
   .cards__grid .card:nth-child(7), .cards__grid .card:nth-child(8){
     margin-bottom: 40px; }
   .cards__grid .card .card__img{
@@ -2015,10 +2000,19 @@ img {
     padding-left: 10px;
     padding-right: 10px; }
   .gift{
-    position: relative;
-    top: -340px;
-    left: 490px;
-    margin-bottom: -310px; }
+    margin-top: 143px;
+    width: 245px;
+    margin-bottom: 40px; }
+  .gift__wrapper{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
   .gift__inner{
     width: 1220px; }
   .gift__inner{
@@ -2035,7 +2029,8 @@ img {
     align-items: center;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    min-height: 290px; }
+    min-height: 290px;
+    width: 245px; }
   .gift__text{
     text-align: center; }
   .card__buy{
@@ -2099,6 +2094,8 @@ img {
     width: 1220px; }
   .add-cards__inner{
     width: 1220px; }
+  .add-cards__inner{
+    width: 895px; }
   .add-cards__grid{
     margin-top: 78px;
     max-width: 895px; }
@@ -2262,6 +2259,22 @@ img {
     left: 580px;
     top: 20px;
     max-width: 570px; } }
+  @media (min-width: 1300px) and (min-width: 320px){
+  .gift__wrapper{
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px; } }
+  @media (min-width: 1300px) and (min-width: 480px){
+  .gift__wrapper{
+    width: 440px; } }
+  @media (min-width: 1300px) and (min-width: 768px){
+  .gift__wrapper{
+    width: 708px; } }
+  @media (min-width: 1300px) and (min-width: 1300px){
+  .gift__wrapper{
+    width: 1220px; }
+  .gift__wrapper{
+    width: 1220px; } }
   @media (max-width: 768px){
   .main-nav--opened{
     margin-bottom: -15px; }
