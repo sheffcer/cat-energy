@@ -1,7 +1,7 @@
 .cards {
   &__inner {
     @include container;
-    outline: 1px dotted green;
+    //outline: 1px dotted green;
   }
 
   &__grid {
@@ -37,7 +37,7 @@
 
     @media (min-width: $screen-lg) {
       width: 245px;
-      background-color: transparent;
+      //background-color: transparent;
     }
   }
 
