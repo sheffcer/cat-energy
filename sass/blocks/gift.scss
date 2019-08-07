@@ -7,10 +7,18 @@
   }
 
   @media (min-width: $screen-lg) {
-    position: relative;
-    top: -340px;
-    left: 490px;
-    margin-bottom: -310px;
+    margin-top: 143px;
+    width: 245px;
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    @media (min-width: $screen-lg) {
+      @include container;
+      display: flex!important;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+    }
   }
 
   &__inner {
@@ -44,6 +52,7 @@
       align-items: center;
       justify-content: space-evenly;
       min-height: 290px;
+      width: 245px;
     }
   }
 

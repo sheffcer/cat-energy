@@ -23,9 +23,10 @@
     @include col(sm, 12, 12, 0);
     @include col(md, 12, 12, 0);
     @include col(lg, 9.3, 20, 0);
-    outline: 1px dotted blue;
+    //outline: 1px dotted blue;
     margin-bottom: 20px;
     min-height: 266px;
+    background-color: $color-concrete;
 
     @media (min-width: $screen-md) {
       margin-bottom: 32px;
@@ -46,7 +47,7 @@
     padding-top: 10px;
     display: flex;
     flex-direction: row;
-    outline: 1px dotted pink;
+    //outline: 1px dotted pink;
     align-items: center;
   }
 

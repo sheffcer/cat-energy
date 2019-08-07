@@ -22,7 +22,7 @@
     @include col(sm, 12, 12, 0);
     @include col(md, 4.3, 12, 70px);
     @include col(lg, 3, 14.9, 0);
-    outline: 1px dotted blue;
+    //outline: 1px dotted blue;
     align-items: stretch;
 
     @media (min-width: $screen-md) {
@@ -44,6 +44,7 @@
   &__grid .card:last-child {
     @media (min-width: $screen-md) {
       background-color: transparent;
+      outline: 1px solid $color-border;
     }
   }
 

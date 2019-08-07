@@ -13,7 +13,7 @@
     padding-inline-start: 0;
     @include row;
     list-style: none;
-    outline: 1px dotted pink;
+    //outline: 1px dotted pink;
     margin: 0;
     margin-top: -8px;
 
@@ -30,7 +30,7 @@
     @include col(sm, 12, 12, 0);
     @include col(md, 5, 11, 0);
     @include col(lg, 2.8, 14, 0);
-    outline: 1px dotted blue;
+    //outline: 1px dotted blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
