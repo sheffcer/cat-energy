@@ -49,8 +49,7 @@ $line-height: 1.5 !default;
   }
 
   &__legend {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    position: relative;
     display: block;
     width: 100%;
     max-width: 100%; // Привет IE
@@ -61,6 +60,44 @@ $line-height: 1.5 !default;
     font-weight: normal;
     color: $color-cod-gray;
     white-space: normal; // Привет IE
+  }
+
+  &__legend::after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: $color-apple;
+    position: absolute;
+  }
+
+  &__legend--first::after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin-left: 40px;
+    top: 20px;
+    left: 150px;
+  }
+
+  &__legend--second::after {
+    content: " ";
+    display: block;
+    width: 160px;
+    height: 3px;
+    margin-left: 40px;
+    top: 14px;
+    left: 90px;
+  }
+
+  &__legend--fird::after {
+    content: " ";
+    display: block;
+    width: 136px;
+    height: 3px;
+    margin-left: 40px;
+    top: 14px;
+    left: 115px;
   }
 
 }
