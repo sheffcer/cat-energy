@@ -905,6 +905,22 @@ img {
   .form__fieldset:not(:last-child) {
     margin-bottom: 1.5rem; }
 
+.form__fieldset--radio {
+  margin-top: -5px; }
+
+.form__fieldset--text {
+  margin-top: 40px; }
+
+.form__fieldset--checkbox {
+  margin-top: -15px;
+  margin-bottom: -15px; }
+
+.form__fieldset--comment {
+  margin-top: -15px; }
+
+.form__fieldset--comment textarea {
+  min-height: 155px; }
+
 .form__fieldset .field-text:nth-child(2) .field-text__name {
   min-width: 62px; }
 
@@ -930,6 +946,7 @@ img {
   text-transform: uppercase; }
 
 .form__legend {
+  margin-bottom: 30px;
   position: relative;
   display: block;
   width: 100%;
@@ -955,8 +972,8 @@ img {
   width: 100px;
   height: 3px;
   margin-left: 40px;
-  top: 20px;
-  left: 150px; }
+  top: 14px;
+  left: 160px; }
 
 .form__legend--second::after {
   content: " ";
@@ -965,7 +982,7 @@ img {
   height: 3px;
   margin-left: 40px;
   top: 14px;
-  left: 90px; }
+  left: 101px; }
 
 .form__legend--fird::after {
   content: " ";
@@ -1088,6 +1105,8 @@ img {
       flex-wrap: nowrap;
   margin-bottom: 18px;
   width: 100%; }
+  .field-text textarea {
+    min-height: 155px; }
   .field-text__name {
     font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
@@ -1159,10 +1178,6 @@ img {
     .field-text__input::placeholder {
       color: #444444;
       opacity: 1; }
-    textarea.field-text__input {
-      height: auto;
-      min-height: calc(3.6em + 2px);
-      resize: vertical; }
   .field-text__help-text {
     display: block;
     padding-top: 0.4em;
@@ -1178,7 +1193,9 @@ img {
   -ms-flex-direction: column;
       flex-direction: column;
   padding-top: 15px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  margin-top: -10px;
+  margin-bottom: -10px; }
   .field-actions__text {
     text-align: center;
     display: block;
@@ -1199,7 +1216,7 @@ img {
     line-height: 1.5;
     margin-bottom: 0.4em; }
   .field-checkbox__input-wrap + .field-checkbox__input-wrap {
-    margin-top: 1rem; }
+    margin-top: 20px; }
   .field-checkbox__name {
     position: relative;
     display: inline-block;
