@@ -15,7 +15,8 @@ $border-radius: rem(3px) !default;
   &__input-wrap {
 
     & + & {
-      margin-top: 1rem;
+      //margin-top: 1rem;
+      margin-top: 20px;
     }
   }
 
