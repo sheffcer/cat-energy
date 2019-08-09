@@ -9,7 +9,8 @@ body {
   padding: 0;
   margin: 0;
   min-width: 320px;
-  font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif; }
+  font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+  background: url("../_design/cat-energy-form-mobile.jpg") no-repeat center top; }
 
 img {
   max-width: 100%;
@@ -917,10 +918,8 @@ img {
     margin-bottom: 1.5rem; }
 
 .form__fieldset--radio {
-  margin-top: -5px; }
-
-.form__fieldset--text {
-  margin-top: 40px; }
+  margin-top: -5px;
+  margin-bottom: 40px !important; }
 
 .form__fieldset--checkbox {
   margin-top: -15px;
@@ -1149,9 +1148,9 @@ img {
       height: 20px;
       background: url("../img/phone.png") no-repeat; }
     .field-text__name--tel {
-      position: relative; }
+      position: relative;
+      min-width: 76px !important; }
   .field-text__input-wrap {
-    margin-left: 10px;
     display: block;
     box-sizing: border-box;
     width: 100%; }
@@ -2020,6 +2019,15 @@ img {
     width: 708px; }
   .form__fieldset{
     margin: 0 40px; }
+  .form__fieldset--text{
+    margin-bottom: 55px !important; }
+  .form__fieldset--text-last{
+    margin-top: 75px;
+    margin-bottom: 50px !important; }
+  .form__fieldset--checkbox{
+    margin-top: 48px; }
+  .form__fieldset--comment textarea{
+    min-height: 180px; }
   .form__fieldset .field-text:nth-child(2) .field-text__name{
     min-width: 75px; }
   .form__fieldset .field-text:nth-child(3) .field-text__name{
@@ -2028,17 +2036,87 @@ img {
     padding-top: 8px;
     font-size: 60px; }
   .form__text{
-    max-width: 320px;
+    margin-bottom: 60px;
+    max-width: 325px;
     padding-left: 40px;
     padding-top: 8px;
     font-size: 20px;
     line-height: 30px; }
+  .form__legend{
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 36px; }
+  .form__legend::before{
+    top: 20px;
+    left: -70px;
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+    position: absolute; }
+  .form__legend--first::after{
+    width: 145px;
+    top: 20px;
+    left: 512px; }
+  .form__legend--second::after{
+    width: 479px;
+    top: 19px;
+    left: 179px; }
+  .form__legend--fird::after{
+    width: 447px;
+    top: 19px;
+    left: 211px; }
   .field-text__name{
     font-size: 20px;
     line-height: 20px; }
+  .field-text__name--email{
+    min-width: 63px !important; }
+  .field-text__name--email::after{
+    top: 6px;
+    left: 595px; }
+  .field-text__name--tel::after{
+    top: 2px;
+    left: 595px; }
   .field-text__input-wrap{
     margin-left: 20px; }
   .field-text__input{
+    font-size: 20px;
+    line-height: 20px; }
+  .field-checkbox{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin: 0;
+    outline: 1px dotted red;
+    min-height: 112px; }
+  .field-checkbox > *{
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  .field-checkbox .field-checkbox__input-wrap{
+    outline: 1px dotted blue;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-top: 0; }
+  .field-radio{
+    padding-top: 35px; }
+  .field-radio__input-wrap{
+    padding-left: 30px;
+    margin-bottom: 30px; }
+  .field-radio__name-text:before{
+    top: -5px;
+    width: 38px;
+    height: 38px; }
+  .field-radio__name-text:after{
+    top: 5px;
+    left: 10px;
+    width: 19px;
+    height: 19px; }
+  .field-radio__name-text{
+    margin-left: 35px;
     font-size: 20px;
     line-height: 20px; }
   .progress-bar{
@@ -2054,6 +2132,13 @@ img {
     min-height: 7px; }
   .progress__name{
     font-size: 20px; } }
+  @media (min-width: 768px) and (min-width: 768px){
+  .field-checkbox .field-checkbox__input-wrap{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 0;
+    padding-right: 0; } }
   @media (min-width: 1300px){
   .main-nav{
     z-index: 2; }
