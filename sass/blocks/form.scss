@@ -42,7 +42,8 @@ $line-height: 1.5 !default;
     }
 
     @media (min-width: $screen-lg) {
-      min-width: 535px;
+      margin: 0;
+      min-width: 570px;
     }
   }
 
@@ -53,6 +54,11 @@ $line-height: 1.5 !default;
       margin-top: 75px;
       margin-bottom: 50px!important;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__fieldset--checkbox {
@@ -62,10 +68,19 @@ $line-height: 1.5 !default;
     @media (min-width: $screen-md) {
       margin-top: 48px;
     }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__fieldset--comment {
     margin-top: -15px;
+
+    @media (min-width: $screen-lg) {
+      margin: 0;
+    }
   }
 
   &__fieldset--comment .field-text__input-wrap {
@@ -108,6 +123,10 @@ $line-height: 1.5 !default;
       padding-top: 8px;
       font-size: 60px;
     }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 21px;
+    }
   }
 
   &__text {
@@ -128,6 +147,11 @@ $line-height: 1.5 !default;
       padding-top: 8px;
       font-size: 20px;
       line-height: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 11px;
+      padding-left: 0;
     }
   }
 
@@ -170,7 +194,12 @@ $line-height: 1.5 !default;
       height: 3px;
       background-color: $color-apple;
       position: absolute;
-  }
+    }
+
+    @media (min-width: $screen-md) {
+      width: 70px;
+      left: -110px;
+    }
   }
 
   &__legend--first::after {
@@ -190,6 +219,11 @@ $line-height: 1.5 !default;
       width: 145px;
       top: 20px;
       left: 512px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 779px;
+      //background-color: black;
     }
   }
 
@@ -211,6 +245,11 @@ $line-height: 1.5 !default;
       top: 19px;
       left: 179px;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 1112px;
+      //background-color: black;
+    }
   }
 
   &__legend--fird::after {
@@ -231,6 +270,11 @@ $line-height: 1.5 !default;
       top: 19px;
       left: 211px;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 1080px;
+      //background-color: black;
+    }
   }
 
   &__btn {
@@ -238,12 +282,18 @@ $line-height: 1.5 !default;
       padding-left: 80px;
       padding-right: 80px;
     }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 210px;
+      padding-right: 210px;
+    }
   }
 
   &__wrap--first {
     @media (min-width: $screen-lg) {
       display: flex;
       justify-content: space-between;
+      max-height: 198px;
     }
   }
 
@@ -251,6 +301,12 @@ $line-height: 1.5 !default;
     @media (min-width: $screen-lg) {
       display: flex;
       justify-content: space-between;
+    }
+  }
+
+  &__wrap--second .field-text {
+    @media (min-width: $screen-lg) {
+      width: 570px;
     }
   }
 
