@@ -225,4 +225,11 @@ $line-height: 1.5 !default;
     }
   }
 
+  &__btn {
+    @media (min-width: $screen-md) {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+
 }
