@@ -28,6 +28,10 @@ $line-height: 1.5 !default;
   &__fieldset--radio {
     margin-top: -5px;
     margin-bottom: 40px!important;
+
+    @media (min-width: $screen-lg) {
+      min-width: 535px;
+    }
   }
 
   &__fieldset--text {
@@ -35,6 +39,10 @@ $line-height: 1.5 !default;
 
     @media (min-width: $screen-md) {
       margin-bottom: 55px!important;
+    }
+
+    @media (min-width: $screen-lg) {
+      min-width: 535px;
     }
   }
 
@@ -229,6 +237,20 @@ $line-height: 1.5 !default;
     @media (min-width: $screen-md) {
       padding-left: 80px;
       padding-right: 80px;
+    }
+  }
+
+  &__wrap--first {
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__wrap--second {
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
     }
   }
 

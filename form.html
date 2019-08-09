@@ -47,6 +47,7 @@
       <h2 class="form__title">Подбор программы</h2>
       <p class="form__text">Заполните анкету и мы подберем
         программу питания для вашего кота</p>
+      <div class="form__wrap--first">
       <fieldset class="form__fieldset  form__fieldset--text">
         <label class="field-text field-text--error">
           <span class="field-text__name">Имя:*</span>
@@ -85,20 +86,24 @@
           </div>
         </div>
       </fieldset>
+
+    </div>
       <fieldset class="form__fieldset  form__fieldset--text-last">
         <legend class="form__legend  form__legend--first">Контактные данные (владельца кота)</legend>
-        <label class="field-text field-text--error">
-          <span class="field-text__name  field-text__name--email">E-mail:*</span>
-          <span
-            class="field-text__input-wrap"><input class="field-text__input" type="text" required
-                                                  placeholder="kuklachev@gmail.com"></span>
-        </label>
-        <label class="field-text field-text--error">
-          <span class="field-text__name  field-text__name--tel">Телефон:*</span>
-          <span
-            class="field-text__input-wrap"><input class="field-text__input" type="text" required
-                                                  placeholder="8 (960) 900-60-90"></span>
-        </label>
+        <div class="form__wrap--second">
+          <label class="field-text field-text--error">
+            <span class="field-text__name  field-text__name--email">E-mail:*</span>
+            <span
+              class="field-text__input-wrap"><input class="field-text__input" type="text" required
+                                                    placeholder="kuklachev@gmail.com"></span>
+          </label>
+          <label class="field-text field-text--error">
+            <span class="field-text__name  field-text__name--tel">Телефон:*</span>
+            <span
+              class="field-text__input-wrap"><input class="field-text__input" type="text" required
+                                                    placeholder="8 (960) 900-60-90"></span>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form__fieldset  form__fieldset--comment">
         <legend class="form__legend  form__legend--second">Комментарий</legend>
