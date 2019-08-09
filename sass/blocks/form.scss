@@ -31,6 +31,8 @@ $line-height: 1.5 !default;
 
     @media (min-width: $screen-lg) {
       min-width: 535px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
