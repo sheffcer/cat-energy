@@ -57,6 +57,10 @@ $border-radius: rem(3px) !default;
         top: 6px;
         left: 595px;
       }
+
+      @media (min-width: $screen-lg) {
+        left: 525px;
+      }
     }
 
     &--tel::after {
@@ -71,6 +75,10 @@ $border-radius: rem(3px) !default;
       @media (min-width: $screen-md) {
         top: 2px;
         left: 595px;
+      }
+
+      @media (min-width: $screen-lg) {
+        left: 525px;
       }
     }
 

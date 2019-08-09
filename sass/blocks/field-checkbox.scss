@@ -160,5 +160,12 @@ $border-radius: rem(3px) !default;
     }
   }
 
+  @media (min-width: $screen-lg) {
+    & .field-checkbox__input-wrap {
+      @include col(lg, 3, 12, 0);
+
+    }
+  }
+
 
 }
