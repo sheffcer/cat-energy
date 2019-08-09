@@ -4,6 +4,10 @@ $line-height: 1.5 !default;
   display: block;
   margin-bottom: 1rem;
 
+  @media (min-width: $screen-md) {
+    padding-top: 35px;
+  }
+
   &__title {
     display: block;
     font-weight: 700;
@@ -16,6 +20,11 @@ $line-height: 1.5 !default;
     & + & {
       margin-top: 1rem;
     }
+
+    @media (min-width: $screen-md) {
+      padding-left: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   &__name {
@@ -25,7 +34,7 @@ $line-height: 1.5 !default;
     margin-right: 0.6em;
     font-weight: 400;
     line-height: $line-height;
-  }
+   }
 
   &__name-text {
     margin-left: 20px;
@@ -67,6 +76,12 @@ $line-height: 1.5 !default;
       height: 30px;
       border: 1px solid $color-input-border;
       border-radius: 50%;
+
+      @media (min-width: $screen-md) {
+        top: -5px;
+        width: 38px;
+        height: 38px;
+      }
     }
 
     @at-root input:focus ~ &:before {
@@ -88,9 +103,22 @@ $line-height: 1.5 !default;
       @at-root input:checked ~ & {
         opacity: 1;
       }
+
+      @media (min-width: $screen-md) {
+        top: 5px;
+        left: 10px;
+        width: 19px;
+        height: 19px;
+      }
     }
 
     // / своя радиокнопка без картинки
+
+    @media (min-width: $screen-md) {
+      margin-left: 35px;
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &__input {

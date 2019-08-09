@@ -27,15 +27,33 @@ $line-height: 1.5 !default;
 
   &__fieldset--radio {
     margin-top: -5px;
+    margin-bottom: 40px!important;
   }
 
   &__fieldset--text {
-    margin-top: 40px;
+    //margin-top: 40px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 55px!important;
+    }
+  }
+
+  &__fieldset--text-last {
+    //margin-top: 40px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 75px;
+      margin-bottom: 50px!important;
+    }
   }
 
   &__fieldset--checkbox {
     margin-top: -15px;
     margin-bottom: -15px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 48px;
+    }
   }
 
   &__fieldset--comment {
@@ -48,6 +66,10 @@ $line-height: 1.5 !default;
 
   &__fieldset--comment textarea {
     min-height: 155px;
+
+    @media (min-width: $screen-md) {
+      min-height: 180px;
+    }
   }
 
 
@@ -92,7 +114,8 @@ $line-height: 1.5 !default;
     text-transform: uppercase;
 
     @media (min-width: $screen-md) {
-      max-width: 320px;
+      margin-bottom: 60px;
+      max-width: 325px;
       padding-left: 40px;
       padding-top: 8px;
       font-size: 20px;
@@ -113,6 +136,12 @@ $line-height: 1.5 !default;
     font-weight: normal;
     color: $color-cod-gray;
     white-space: normal; // Привет IE
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 70px;
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   &__legend::after {
@@ -121,6 +150,19 @@ $line-height: 1.5 !default;
     height: 3px;
     background-color: $color-apple;
     position: absolute;
+  }
+
+  &__legend::before {
+    @media (min-width: $screen-md) {
+      top: 20px;
+      left: -70px;
+      content: " ";
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $color-apple;
+      position: absolute;
+  }
   }
 
   &__legend--first::after {
@@ -134,6 +176,12 @@ $line-height: 1.5 !default;
 
     @media (min-width: $screen-sm) {
       left: 320px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 145px;
+      top: 20px;
+      left: 512px;
     }
   }
 
@@ -149,6 +197,12 @@ $line-height: 1.5 !default;
     @media (min-width: $screen-sm) {
       left: 260px;
     }
+
+    @media (min-width: $screen-md) {
+      width: 479px;
+      top: 19px;
+      left: 179px;
+    }
   }
 
   &__legend--fird::after {
@@ -162,6 +216,12 @@ $line-height: 1.5 !default;
 
     @media (min-width: $screen-sm) {
       left: 285px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 447px;
+      top: 19px;
+      left: 211px;
     }
   }
 

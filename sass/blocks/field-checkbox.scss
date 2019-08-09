@@ -122,4 +122,21 @@ $border-radius: rem(3px) !default;
   &__help-text {
     @include field-help-text;
   }
+
+  @media (min-width: $screen-md) {
+    @include row;
+    margin: 0;
+    outline: 1px dotted red;
+    min-height: 112px;
+
+    & .field-checkbox__input-wrap {
+      @include col(md, 6, 12, 0);
+      //@include col(lg, 3, 14.9, 0);
+      outline: 1px dotted blue;
+      align-items: stretch;
+      margin-top: 0;
+    }
+  }
+
+
 }
