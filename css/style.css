@@ -2067,6 +2067,9 @@ img {
     width: 447px;
     top: 19px;
     left: 211px; }
+  .form__btn{
+    padding-left: 80px;
+    padding-right: 80px; }
   .field-text__name{
     font-size: 20px;
     line-height: 20px; }
@@ -2083,6 +2086,27 @@ img {
   .field-text__input{
     font-size: 20px;
     line-height: 20px; }
+  .field-actions{
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 40px;
+    width: 523px;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .field-actions__text{
+    font-size: 16px; }
+  .field-checkbox__name-text:before{
+    left: -2px;
+    width: 40px;
+    height: 40px; }
+  .field-checkbox__name-text:after{
+    left: 10px;
+    top: 10px; }
+  .field-checkbox__name-text{
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 38px;
+    padding-top: 10px; }
   .field-checkbox{
     display: -ms-flexbox;
     display: flex;
@@ -2092,7 +2116,11 @@ img {
     margin-right: -20px;
     margin: 0;
     outline: 1px dotted red;
-    min-height: 112px; }
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 112px;
+    margin-top: -16px; }
   .field-checkbox > *{
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
@@ -2100,7 +2128,9 @@ img {
     outline: 1px dotted blue;
     -ms-flex-align: stretch;
     align-items: stretch;
-    margin-top: 0; }
+    margin-top: 0;
+    min-height: 40px;
+    margin-bottom: 30px; }
   .field-radio{
     padding-top: 35px; }
   .field-radio__input-wrap{
@@ -2134,9 +2164,9 @@ img {
     font-size: 20px; } }
   @media (min-width: 768px) and (min-width: 768px){
   .field-checkbox .field-checkbox__input-wrap{
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
     padding-left: 0;
     padding-right: 0; } }
   @media (min-width: 1300px){
