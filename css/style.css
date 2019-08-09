@@ -134,7 +134,8 @@ img {
   .promo__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    outline: 1px dotted green; }
   .promo__grid {
     display: -ms-flexbox;
     display: flex;
@@ -194,6 +195,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px dotted green;
     background: url("../img/gift-photo-mobile.jpg") no-repeat;
     background-position: center top;
     background-size: 280px 289px;
@@ -312,7 +314,8 @@ img {
 .cards__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  outline: 1px dotted green; }
 
 .cards__grid {
   display: -ms-flexbox;
@@ -403,6 +406,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px dotted green;
   min-height: 65px; }
 
 .main-footer {
@@ -410,7 +414,8 @@ img {
   .main-footer__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    outline: 1px dotted green; }
     .main-footer__inner .main-footer-wrap:last-child {
       -ms-flex-direction: column;
           flex-direction: column;
@@ -471,7 +476,8 @@ img {
 .add-cards__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  outline: 1px dotted green; }
 
 .add-cards__grid {
   display: -ms-flexbox;
@@ -588,7 +594,8 @@ img {
   .features__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    outline: 1px dotted green; }
   .features__list {
     -webkit-padding-start: 0;
             padding-inline-start: 0;
@@ -665,7 +672,8 @@ img {
   .program__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    outline: 1px dotted green; }
   .program__grid {
     display: -ms-flexbox;
     display: flex;
@@ -794,6 +802,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px dotted green;
     background-color: #f2f2f2; }
   .example__grid {
     margin-top: 25px;
@@ -867,6 +876,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px dotted green;
     min-height: 475px;
     display: -ms-flexbox;
     display: flex;
@@ -894,7 +904,8 @@ img {
 .form__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  outline: 1px dotted green; }
 
 .form__fieldset {
   min-width: 0;
@@ -917,6 +928,9 @@ img {
 
 .form__fieldset--comment {
   margin-top: -15px; }
+
+.form__fieldset--comment .field-text__input-wrap {
+  margin-left: 0; }
 
 .form__fieldset--comment textarea {
   min-height: 155px; }
@@ -991,7 +1005,7 @@ img {
   height: 3px;
   margin-left: 40px;
   top: 14px;
-  left: 115px; }
+  left: 125px; }
 
 .field-range {
   display: -ms-flexbox;
@@ -1535,6 +1549,12 @@ img {
     margin-bottom: 80px; }
   .form__inner{
     width: 440px; }
+  .form__legend--first::after{
+    left: 320px; }
+  .form__legend--second::after{
+    left: 260px; }
+  .form__legend--fird::after{
+    left: 285px; }
   .progress{
     width: 185px; } }
   @media (min-width: 768px){
@@ -2068,6 +2088,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px dotted green;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-pack: distribute;
