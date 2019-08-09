@@ -2474,7 +2474,9 @@ img {
   .form__inner{
     width: 1220px; }
   .form__fieldset--radio{
-    min-width: 535px; }
+    min-width: 535px;
+    margin-left: 0;
+    margin-right: 0; }
   .form__fieldset--text{
     margin: 0;
     min-width: 570px; }
