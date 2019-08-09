@@ -9,8 +9,7 @@ body {
   padding: 0;
   margin: 0;
   min-width: 320px;
-  font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
-  background: url("../_design/cat-energy-form-mobile.jpg") no-repeat center top; }
+  font-family: "Oswaldregular", -apple-system, BlinkMacSystemFont, "Arial", "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif; }
 
 img {
   max-width: 100%;
@@ -135,8 +134,7 @@ img {
   .promo__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
   .promo__grid {
     display: -ms-flexbox;
     display: flex;
@@ -196,7 +194,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green;
     background: url("../img/gift-photo-mobile.jpg") no-repeat;
     background-position: center top;
     background-size: 280px 289px;
@@ -315,8 +312,7 @@ img {
 .cards__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  outline: 1px dotted green; }
+  margin-right: auto; }
 
 .cards__grid {
   display: -ms-flexbox;
@@ -407,7 +403,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px dotted green;
   min-height: 65px; }
 
 .main-footer {
@@ -415,8 +410,7 @@ img {
   .main-footer__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
     .main-footer__inner .main-footer-wrap:last-child {
       -ms-flex-direction: column;
           flex-direction: column;
@@ -446,7 +440,7 @@ img {
     display: none; }
   .main-footer__map {
     position: relative;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
   .main-footer__map--catalog {
     margin-bottom: 50px; }
   .main-footer__map::before {
@@ -458,6 +452,7 @@ img {
     width: 55px;
     height: 53px; }
   .main-footer__html {
+    margin-top: 20px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -477,8 +472,7 @@ img {
 .add-cards__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  outline: 1px dotted green; }
+  margin-right: auto; }
 
 .add-cards__grid {
   display: -ms-flexbox;
@@ -595,8 +589,7 @@ img {
   .features__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
   .features__list {
     -webkit-padding-start: 0;
             padding-inline-start: 0;
@@ -673,8 +666,7 @@ img {
   .program__inner {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px dotted green; }
+    margin-right: auto; }
   .program__grid {
     display: -ms-flexbox;
     display: flex;
@@ -803,7 +795,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green;
     background-color: #f2f2f2; }
   .example__grid {
     margin-top: 25px;
@@ -877,7 +868,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green;
     min-height: 475px;
     display: -ms-flexbox;
     display: flex;
@@ -905,15 +895,13 @@ img {
 .form__inner {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  outline: 1px dotted green; }
+  margin-right: auto; }
 
 .form__fieldset {
   min-width: 0;
   padding: 0;
   margin: 0;
-  border: 0;
-  outline: 1px dotted pink; }
+  border: 0; }
   .form__fieldset:not(:last-child) {
     margin-bottom: 1.5rem; }
 
@@ -1557,8 +1545,6 @@ img {
   .progress{
     width: 185px; } }
   @media (min-width: 768px){
-  body{
-    background: url("../_design/cat-energy-form-tablet.jpg") no-repeat center top; }
   .main-nav__list{
     min-width: 550px; }
   .main-nav__list .main-nav__item:last-child{
@@ -1717,6 +1703,8 @@ img {
     min-height: 85px;
     -ms-flex-align: end;
     align-items: flex-end; }
+  .main-footer--index{
+    margin-top: 15px !important; }
   .main-footer{
     margin-top: 50px;
     background: url("../img/map-tablet.jpg") no-repeat center 150px;
@@ -1729,7 +1717,8 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-top: 48px; }
   .main-footer__inner .main-footer-wrap:last-child{
     padding-top: 320px;
     min-height: 150px;
@@ -1738,14 +1727,17 @@ img {
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
   .main-footer__inner .main-footer-wrap:first-child{
     max-width: 160px;
-    text-align: left; }
+    text-align: left;
+    padding-left: 40px; }
   .main-footer-wrap{
     min-width: 708px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .main-footer__title{
     max-width: 160px;
     font-size: 20px;
@@ -2115,7 +2107,6 @@ img {
     margin-left: -20px;
     margin-right: -20px;
     margin: 0;
-    outline: 1px dotted red;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -2125,7 +2116,6 @@ img {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
   .field-checkbox .field-checkbox__input-wrap{
-    outline: 1px dotted blue;
     -ms-flex-align: stretch;
     align-items: stretch;
     margin-top: 0;
@@ -2228,7 +2218,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dotted green;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-pack: distribute;
