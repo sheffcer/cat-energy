@@ -6,6 +6,7 @@ $line-height: 1.5 !default;
 
   @media (min-width: $screen-md) {
     padding-top: 35px;
+    border: 1px solid $color-border;
   }
 
   &__title {
