@@ -2047,6 +2047,9 @@ img {
     height: 3px;
     background-color: #68b738;
     position: absolute; }
+  .form__legend::before{
+    width: 70px;
+    left: -110px; }
   .form__legend--first::after{
     width: 145px;
     top: 20px;
@@ -2473,21 +2476,54 @@ img {
   .form__fieldset--radio{
     min-width: 535px; }
   .form__fieldset--text{
-    min-width: 535px; }
+    margin: 0;
+    min-width: 570px; }
+  .form__fieldset--text-last{
+    margin-left: 0;
+    margin-right: 0; }
+  .form__fieldset--checkbox{
+    margin-left: 0;
+    margin-right: 0; }
+  .form__fieldset--comment{
+    margin: 0; }
+  .form__title{
+    padding-top: 21px; }
+  .form__text{
+    padding-top: 11px;
+    padding-left: 0; }
+  .form__legend--first::after{
+    width: 779px; }
+  .form__legend--second::after{
+    width: 1112px; }
+  .form__legend--fird::after{
+    width: 1080px; }
+  .form__btn{
+    padding-left: 210px;
+    padding-right: 210px; }
   .form__wrap--first{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    max-height: 198px; }
   .form__wrap--second{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  .form__wrap--second .field-text{
+    width: 570px; }
   .field-text__name--email::after{
     left: 525px; }
   .field-text__name--tel::after{
     left: 525px; }
+  .field-actions{
+    margin-top: -48px;
+    width: 835px;
+    padding-left: 0; }
+  .field-checkbox__name-text{
+    padding-left: 15px;
+    padding-top: 12px; }
   .progress-bar{
     position: relative;
     left: 580px;
@@ -2510,9 +2546,9 @@ img {
   .gift__wrapper{
     width: 1220px; }
   .field-checkbox .field-checkbox__input-wrap{
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
     padding-left: 0;
     padding-right: 0; } }
   @media (max-width: 768px){
