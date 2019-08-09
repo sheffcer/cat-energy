@@ -38,6 +38,10 @@ $line-height: 1.5 !default;
     margin-top: -15px;
   }
 
+  &__fieldset--comment .field-text__input-wrap {
+    margin-left: 0;
+  }
+
   &__fieldset--comment textarea {
     min-height: 155px;
   }
@@ -101,6 +105,10 @@ $line-height: 1.5 !default;
     margin-left: 40px;
     top: 14px;
     left: 160px;
+
+    @media (min-width: $screen-sm) {
+      left: 320px;
+    }
   }
 
   &__legend--second::after {
@@ -111,6 +119,10 @@ $line-height: 1.5 !default;
     margin-left: 40px;
     top: 14px;
     left: 101px;
+
+    @media (min-width: $screen-sm) {
+      left: 260px;
+    }
   }
 
   &__legend--fird::after {
@@ -120,7 +132,11 @@ $line-height: 1.5 !default;
     height: 3px;
     margin-left: 40px;
     top: 14px;
-    left: 115px;
+    left: 125px;
+
+    @media (min-width: $screen-sm) {
+      left: 285px;
+    }
   }
 
 }
