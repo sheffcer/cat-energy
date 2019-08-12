@@ -38,26 +38,12 @@ img {
   .main-nav__inner {
     min-height: 67px; }
   .main-nav__list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: -20px;
-    margin-right: -20px;
     -webkit-padding-start: 0;
             padding-inline-start: 0;
     list-style: none; }
-    .main-nav__list > * {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; }
   .main-nav__list .main-nav__item:last-child {
     border-bottom: 1px solid #ececec; }
   .main-nav__item {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
     padding-top: 24px;
     padding-bottom: 24px;
     text-align: center;
@@ -1439,12 +1425,6 @@ img {
     padding-left: 20px;
     padding-right: 20px; } }
   @media (min-width: 480px){
-  .main-nav__item{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0; }
   .main-nav--closed .main-nav__toggle{
     left: 410px; }
   .main-nav--opened .main-nav__toggle{
@@ -1546,15 +1526,13 @@ img {
     width: 185px; } }
   @media (min-width: 768px){
   .main-nav__list{
-    min-width: 550px; }
+    min-width: 441px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .main-nav__list .main-nav__item:last-child{
     border-bottom: none; }
-  .main-nav__item{
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-    padding-left: 0;
-    padding-right: 0; }
   .main-nav__item{
     padding: 0;
     border-top: none; }
@@ -2014,7 +1992,7 @@ img {
   .form__fieldset--text{
     margin-bottom: 55px !important; }
   .form__fieldset--text-last{
-    margin-top: 75px;
+    margin-top: 60px;
     margin-bottom: 50px !important; }
   .form__fieldset--checkbox{
     margin-top: 48px; }
@@ -2125,7 +2103,7 @@ img {
     min-height: 40px;
     margin-bottom: 30px; }
   .field-radio{
-    padding-top: 35px;
+    padding-top: 30px;
     border: 1px solid #e6e6e6; }
   .field-radio__input-wrap{
     padding-left: 30px;
@@ -2167,7 +2145,7 @@ img {
   .main-nav{
     z-index: 2; }
   .main-nav__list{
-    width: 610px; }
+    min-width: 480px; }
   .main-nav__link{
     font-size: 20px; }
   .main-nav__link--white{
@@ -2481,6 +2459,7 @@ img {
     margin: 0;
     min-width: 570px; }
   .form__fieldset--text-last{
+    margin-top: 75px;
     margin-left: 0;
     margin-right: 0; }
   .form__fieldset--checkbox{
@@ -2526,6 +2505,10 @@ img {
   .field-checkbox__name-text{
     padding-left: 15px;
     padding-top: 12px; }
+  .field-radio{
+    min-width: 570px;
+    padding-top: 31px;
+    padding-bottom: 8px; }
   .progress-bar{
     position: relative;
     left: 580px;
