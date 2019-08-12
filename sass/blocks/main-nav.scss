@@ -11,17 +11,19 @@
 
   &__list {
     //outline: 1px dotted green;
-    @include row;
+    //@include row;
     padding-inline-start: 0;
     list-style: none;
 
     @media (min-width: $screen-md) {
-      min-width: 550px;
-      //flex-wrap: nowrap;
+      min-width: 441px;
+      //margin: 0;
+      display: flex;
+      justify-content: space-between;
     }
 
     @media (min-width: $screen-lg) {
-      width: 610px;
+      min-width: 480px;
     }
   }
 
@@ -34,9 +36,9 @@
   }
 
   &__item {
-    @include col(xs, 12, 12, 0);
-    @include col(sm, 12, 12, 0);
-    @include col(md, 4, 12,  0);
+    //@include col(xs, 12, 12, 0);
+    //@include col(sm, 12, 12, 0);
+    //@include col(md, 4, 12, 0);
     padding-top: 24px;
     padding-bottom: 24px;
     //outline: 1px dotted pink;

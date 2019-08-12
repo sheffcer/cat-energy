@@ -5,8 +5,14 @@ $line-height: 1.5 !default;
   margin-bottom: 1rem;
 
   @media (min-width: $screen-md) {
-    padding-top: 35px;
+    padding-top: 30px;
     border: 1px solid $color-border;
+  }
+
+  @media (min-width: $screen-lg) {
+    min-width: 570px;
+    padding-top: 31px;
+    padding-bottom: 8px;
   }
 
   &__title {
